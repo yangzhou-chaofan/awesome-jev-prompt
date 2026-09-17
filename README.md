@@ -1,13 +1,17 @@
 # awesome-jev-prompt
 
+![Top 100 Jev Showcase](site/assets/media/hero-banner.webp)
+
 > **The unofficial, community-maintained collection of prompts, states, and decision patterns for [Jev](https://typesafe.ai/) — TypeSafe AI's first System One Model.**
 >
-> Jev doesn't take "prompts" in the LLM sense. It takes a **state** and returns **typed decisions with calibrated probabilities** — Choice, Score, Noul. This repo collects the patterns that make those decisions good.
+> Jev doesn't take "prompts" in the LLM sense. It takes a **state** and returns **typed decisions with calibrated probabilities** — Choice, Score, Noul. This repo collects the patterns that make those decisions good — plus the **Top 100 community builds**, ranked, with preview cards.
 >
 > *Unofficial. Not affiliated with or endorsed by TypeSafe AI. "Jev" and "System One" are TypeSafe AI product names, used here descriptively.*
 
 [![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)
 [![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--17-fbbf24)](#sources)
+[![Showcase](https://img.shields.io/badge/showcase-119%20projects--top%20100%20ranked-blue)](#-top-100-jev-showcase)
+[![Sources](https://img.shields.io/badge/sources-38%20verified-green)](SOURCES.md)
 [![Jev](https://img.shields.io/badge/model-Jev%201.13-blue)](https://docs.typesafe.ai/models)
 
 ---
@@ -48,45 +52,63 @@ state = {
 #            choice("Which team should handle this?", ["billing","technical","account"])
 ```
 
+## 🏆 Top 100 Jev Showcase
+
+**119 projects tracked, top 100 ranked by stars** — every card carries its own preview:
+
+| # | Project | ★ | What it does |
+|---|---|---|---|
+| 1 | [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | 1052 | The browser-use team's ultrafast Jev integration |
+| 2 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | 510 | Reverse-engineered Jev: option-attention head + Doom/chess checkpoints |
+| 3 | [TheoLeeCJ/openjev](https://github.com/TheoLeeCJ/openjev) | 384 | "Jev on a 3090 at home?" — the open replica |
+| 4 | [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 332 | One AI trade decision every Monad block |
+| 5 | [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | 140 | Jev plays Mario from RAM — repo pushed 90s after the tweet |
+| 6 | [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | 71 | Staged code-review workflow with a local dashboard |
+| 7 | [typesafeainate/dspy-typesafeify](https://github.com/typesafeainate/dspy-typesafeify) | 55 | DSPy decorator routing predictions through TypeSafe |
+| 8 | [gargpratyush/jev-router](https://github.com/gargpratyush/jev-router) | 41 | Route Claude Code tasks to the cheapest capable model |
+| 9 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | 40 | Local-first MCP plugin for continuous quality review |
+| 10 | [RomanSlack/jev-drone](https://github.com/RomanSlack/jev-drone) | 36 | Camera-only autonomous drone, Jev at 2.5Hz |
+
+➡️ **[Full ranked table with all 119 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)**
+
 ## Repository map
 
 ```
 awesome-jev-prompt/
 ├── README.md              ← you are here
-├── SOURCES.md             ← every information source, verified & dated
+├── SOURCES.md             ← 38 sources with verification status & access methods
 ├── data/
 │   ├── sources.json       ← machine-readable source registry
-│   └── prompts.json       ← the 42-entry prompt/state/pattern collection
-└── site/                  ← companion HTML gallery (mirrors the neta.art work)
+│   ├── prompts.json       ← the 42-entry prompt/state/pattern collection
+│   ├── community.json     ← 119 repos + 15 tracked X posts (the showcase dataset)
+│   └── raw/
+│       └── discord-show-and-tell-2026-09-17.md  ← first-hand 714-link channel scrape
+└── site/                  ← the full gallery, self-contained (assets included)
+    └── assets/            ← 119 preview cards + hero banner + media stills
 ```
 
-## Contents
+## What's in the pattern collection
 
-### 1. Primitives
-| Primitive | Answer space | Output |
+**What the first 72 hours built** — six clusters:
+
+| Cluster | Count | Best-of |
 |---|---|---|
-| **Choice** | enumerated set (cardinality ≤ 255) | `choice: "billing"` |
-| **Score** | defined numeric scale | `score: 1.4` |
-| **Noul** | true/false | `noul: 0.95` |
+| 🤖 Agents & computer use | 40+ | typesafe-computer-use · jev-browser · blink |
+| 🛠️ Devtools, SDKs, MCP | 25+ | jev-router · typesafe-mcp · ruby_llm-typesafe |
+| 🎮 Games & physics AI | 12 | typesafe-mario · TerraBlind · things-vs-stuff |
+| 🛡️ Guardrails & safety | 8 | agent-control-plane (Dafny proofs) · second-thought · winnow |
+| 🔬 Replicas & benchmarks | 10 | jevlike · openjev · jev-on-a-laptop |
+| 💰 Trading & data | 3 | jev-trader · btc-jev-signal · advocaat |
 
-### 2. State formats
-`string` → `object` (recommended) → `array of messages`. Full support-ticket example in
-[`data/prompts.json`](data/prompts.json) → `state-full-example`.
+## The case study: the 90-second repo
 
-### 3. Patterns
-**Speculative fan-out** · **Confidence-gated routing** · **Composite scoring** · **Intent routing**
+![Jev playing Super Mario Bros.](site/assets/media/mario-poster.jpg)
 
-### 4. Case study: the 90-second repo
 [@faadilhshaik](https://x.com/faadilhshaik/status/2100086301894881578) got Jev playing Super Mario Bros.
 (2,278 likes), then pushed [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) 90 seconds
 after posting. The state schema — `player / trajectory / hazard / terrain / reaction_timing /
 recent_control / episode` — is reproduced verbatim in [`data/prompts.json`](data/prompts.json).
 The model never sees a screenshot.
-
-### 5. Community patterns (first 72 hours)
-Trading per blockchain block · computer-use at $0.0002/step · drone judgment loops · cheapest-model
-routing · tool-result sieves · staged code review · graph navigation · commit triage. All linked in
-[`data/prompts.json`](data/prompts.json) → `community-patterns`.
 
 ## Contributing
 
