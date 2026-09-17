@@ -1797,9 +1797,5 @@
   },
   "showTop": 100,
   "sources_note": "Repo list merges GitHub search (407 matches, \"jev\" in name/description/README) with the community scrape of TypeSafe's Discord #show-and-tell (714 links, full channel history since Jul 22). Cards marked ◇ came from the channel."
- },
- "marioVideo": {
-  "mp4": "https://video.twimg.com/amplify_video/2100085174826647552/vid/avc1/960x540/OED8oA5c7R4eadJG.mp4?tag=29",
-  "poster": "https://pbs.twimg.com/amplify_video_thumb/2100085174826647552/img/6YMRQKKZYBPsW2oo.jpg"
  }
 }

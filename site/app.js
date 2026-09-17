@@ -131,27 +131,27 @@ function repoUrl(r) {
 function cardMedia(r, rank) {
   const wrap = el("a", "rimg");
   wrap.href = repoUrl(r); wrap.target = "_blank"; wrap.rel = "noopener";
-  if (r.video) {
-    const v = el("video", "vid");
-    v.muted = true; v.loop = true; v.playsInline = true; v.preload = "none";
-    v.poster = r.poster || r.img;
-    const src = el("source");
-    src.src = r.video; src.type = "video/mp4";
-    v.appendChild(src);
-    wrap.appendChild(v);
-    wrap.addEventListener("mouseenter", () => v.play().catch(() => {}));
-    wrap.addEventListener("mouseleave", () => v.pause());
-  } else {
-    const img = el("img");
-    img.alt = r.name + " — GitHub preview card";
-    img.loading = "lazy"; img.decoding = "async";
-    img.dataset.src = r.img;
-    LAZY.observe(img);
-    img.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><rect width="200" height="100" fill="#10131a"/></svg>');
-    wrap.appendChild(img);
-  }
+  const local = "assets/cards/" + r.owner + "-" + r.name + ".webp";
+  const img = el("img");
+  img.alt = r.name + " — project card";
+  img.loading = "lazy"; img.decoding = "async";
+  img.dataset.src = local;
+  img.dataset.fallback = r.img; // remote OG card, only if the local copy fails
+  LAZY.observe(img);
+  img.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100"><rect width="200" height="100" fill="#10131a"/></svg>');
+  img.addEventListener("error", () => {
+    if (img.dataset.fallback) {
+      img.src = img.dataset.fallback;
+      delete img.dataset.fallback;
+    } else {
+      img.style.objectFit = "contain";
+      img.style.padding = "8px";
+      img.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320"><rect width="640" height="320" fill="#151924"/><text x="50%" y="47%" fill="#5a6373" font-family="monospace" font-size="34" text-anchor="middle">' + r.name + '</text><text x="50%" y="62%" fill="#3d465c" font-family="monospace" font-size="22" text-anchor="middle">github.com/' + r.owner + '</text></svg>');
+    }
+  });
+  wrap.appendChild(img);
   if (rank <= 3) wrap.appendChild(el("span", "rk gold", "🏆 #" + rank));
-  else if (r.video) wrap.appendChild(el("span", "rk", "▶ hover to play"));
+  else if (r.src === "discord") wrap.appendChild(el("span", "rk", "◇ #" + rank));
   else wrap.appendChild(el("span", "rk", "#" + rank));
   return wrap;
 }
@@ -232,6 +232,7 @@ function renderTweets(tweets) {
       a.href = t.url; a.target = "_blank"; a.rel = "noopener";
       const img = el("img", "timg");
       img.src = t.media.poster; img.alt = "post media"; img.loading = "lazy";
+      img.addEventListener("error", () => img.remove());
       a.appendChild(img);
       c.appendChild(a);
     }
@@ -257,6 +258,28 @@ function renderOfficial(items) {
     grid.appendChild(a);
   });
 }
+const YT = [
+  { id: "cJ0EOzey--o", img: "assets/media/yt-doom.jpg", title: "What's Next After RLHF? — Diogo Almeida", who: "AI Engineer · Sep 17" },
+  { id: "o-y1HJ6buGQ", img: "assets/media/yt-aicouncil.jpg", title: "AI: too good to be true, too bad to be useful", who: "AI Council · Jun 19" },
+  { id: "LE3bGTaAgOE", img: "assets/media/yt-founders.jpg", title: "Diogo Almeida — Founders You Should Know", who: "FYSK · Mar 31" }
+];
+function renderYT() {
+  const row = document.getElementById("yt-row");
+  YT.forEach(v => {
+    const a = el("a", "ytcard");
+    a.href = "https://www.youtube.com/watch?v=" + v.id; a.target = "_blank"; a.rel = "noopener";
+    const iw = el("div", "yimg");
+    const img = el("img");
+    img.src = v.img; img.alt = v.title; img.loading = "lazy";
+    img.addEventListener("error", () => iw.classList.add("noimg"));
+    iw.appendChild(img);
+    iw.appendChild(el("span", "play", "▶"));
+    a.appendChild(iw);
+    a.appendChild(el("div", "yt", v.title));
+    a.appendChild(el("div", "yw", v.who));
+    row.appendChild(a);
+  });
+}
 
 /* boot */
 fetch("data.json")
@@ -270,11 +293,12 @@ fetch("data.json")
     REPOS = d.community.repos;
     // add poster to the mario tweet card media
     const mt = d.community.tweets.find(t => t.handle === "faadilhshaik");
-    if (mt) mt.media = { poster: d.marioVideo ? d.marioVideo.poster : null };
+    if (mt) mt.media = { poster: "assets/media/mario-poster.jpg" };
     renderFilters();
     renderShowcase();
     renderTimeline(d.community.timeline);
     renderTweets(d.community.tweets);
+    renderYT();
     renderOfficial(d.community.official);
     const tail = document.getElementById("tailnote");
     if (tail) tail.textContent = "Sources merged: GitHub search (407 matches for 'jev', created > 2026-09-01) + full scrape of TypeSafe's Discord #show-and-tell (714 links since Jul 22, incl. non-'jev'-named projects). Showing top " + Math.min(100, REPOS.length) + " by stars — pick a category to see all " + REPOS.length + ".";

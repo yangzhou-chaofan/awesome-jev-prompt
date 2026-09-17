@@ -132,3 +132,22 @@ footer .mono { font-family: var(--mono); font-size: 11px; color: var(--faint); m
 @media (max-width: 860px) { .mario { grid-template-columns: 1fr; } .video-box { position: static; } }
 
 .filter-hint { font-family: var(--mono); font-size: 10.5px; color: var(--faint); align-self: center; margin-left: 4px; }
+
+/* hero banner */
+.hero-banner { display: block; width: 100%; border-radius: 14px; border: 1px solid var(--line); margin-top: 30px; }
+
+/* mario still */
+.video-box img.still { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
+
+/* youtube cards */
+.ytrow { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.ytcard { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: .15s; }
+.ytcard:hover { border-color: var(--faint); transform: translateY(-2px); text-decoration: none; }
+.ytcard .yimg { position: relative; aspect-ratio: 4/3; background: var(--bg2); }
+.ytcard .yimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ytcard .yimg.noimg img { display: none; }
+.ytcard .yimg .play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px;
+  border-radius: 50%; background: rgba(74,222,128,.92); color: #08120b; display: grid; place-items: center; font-size: 17px; }
+.ytcard .yimg.noimg .play { position: static; transform: none; margin: 40px auto; }
+.ytcard .yt { font-size: 13px; font-weight: 600; padding: 10px 12px 2px; line-height: 1.4; }
+.ytcard .yw { font-family: var(--mono); font-size: 10.5px; color: var(--faint); padding: 0 12px 11px; }
