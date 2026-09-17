@@ -6,9 +6,17 @@
   "curated": 100,
   "hours": 72,
   "cookbooks": 16,
-  "promptEntries": 42
+  "promptEntries": 42,
+  "discordLinks": 714,
+  "discordRepos": 82,
+  "tweetsTracked": 15
  },
  "timeline": [
+  {
+   "date": "Jul 22",
+   "title": "The room existed before the launch",
+   "detail": "TypeSafe's Discord #show-and-tell channel opens during stealth. By Sep 17 it holds 714 shared links — the community was assembling before Jev had a name in public."
+  },
   {
    "date": "Sep 15",
    "title": "Jev launches out of stealth",
@@ -95,6 +103,17 @@
    "url": "https://github.com/devagrawal09/jev-review"
   },
   {
+   "name": "dspy-typesafeify",
+   "owner": "typesafeainate",
+   "stars": 55,
+   "date": "2026-09-15",
+   "cat": "devtools",
+   "desc": "DSPy Signature decorator that routes structured predictions through TypeSafe automatically — the highest-starred find that name-based search missed.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/typesafeainate/dspy-typesafeify",
+   "url": "https://github.com/typesafeainate/dspy-typesafeify"
+  },
+  {
    "name": "jev-router",
    "owner": "gargpratyush",
    "stars": 41,
@@ -117,7 +136,7 @@
   {
    "name": "jev-drone",
    "owner": "RomanSlack",
-   "stars": 35,
+   "stars": 36,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "Camera-only autonomous drone in MuJoCo with a small judgment model (TypeSafe Jev) in the loop at 2.5Hz",
@@ -127,7 +146,7 @@
   {
    "name": "awesome-typesafe",
    "owner": "AbdelStark",
-   "stars": 33,
+   "stars": 34,
    "date": "2026-09-17",
    "cat": "awesome",
    "desc": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev.",
@@ -143,6 +162,26 @@
    "desc": "Jev-powered element selection for your agent’s existing computer-use tools",
    "img": "https://opengraph.githubassets.com/1/vlad-terin/jev-browser",
    "url": "https://github.com/vlad-terin/jev-browser"
+  },
+  {
+   "name": "jev-browser",
+   "owner": "vinilana",
+   "stars": 27,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Community build (1★ at snapshot).",
+   "img": "https://opengraph.githubassets.com/1/vinilana/jev-browser",
+   "url": "https://github.com/vinilana/jev-browser"
+  },
+  {
+   "name": "jev-browser",
+   "owner": "Ying-Kai-Liao",
+   "stars": 27,
+   "date": "2026-09-16",
+   "cat": "agents",
+   "desc": "Browser automation where an LLM plans and Jev (Typesafe System One) decides. Library, CLI and MCP server.",
+   "img": "https://opengraph.githubassets.com/1/Ying-Kai-Liao/jev-browser",
+   "url": "https://github.com/Ying-Kai-Liao/jev-browser"
   },
   {
    "name": "foreman",
@@ -195,6 +234,16 @@
    "url": "https://github.com/vinilana/jev-eval-agent"
   },
   {
+   "name": "typesafe-ai-benchmark",
+   "owner": "iammrduncan",
+   "stars": 14,
+   "date": "2026-09-16",
+   "cat": "research",
+   "desc": "This is a LLM Gateway that mimics typesafe ai structured output. Like an imposter Jev.",
+   "img": "https://opengraph.githubassets.com/1/iammrduncan/typesafe-ai-benchmark",
+   "url": "https://github.com/iammrduncan/typesafe-ai-benchmark"
+  },
+  {
    "name": "commit-miner",
    "owner": "devanshbatham",
    "stars": 13,
@@ -205,14 +254,15 @@
    "url": "https://github.com/devanshbatham/commit-miner"
   },
   {
-   "name": "typesafe-ai-benchmark",
-   "owner": "iammrduncan",
-   "stars": 13,
-   "date": "2026-09-16",
-   "cat": "research",
-   "desc": "This is a LLM Gateway that mimics typesafe ai structured output. Like an imposter Jev.",
-   "img": "https://opengraph.githubassets.com/1/iammrduncan/typesafe-ai-benchmark",
-   "url": "https://github.com/iammrduncan/typesafe-ai-benchmark"
+   "name": "mosaik",
+   "owner": "luantak",
+   "stars": 11,
+   "date": "2026-09-13",
+   "cat": "agents",
+   "desc": "Agentic browser automation assembled from small composable widgets.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/luantak/mosaik",
+   "url": "https://github.com/luantak/mosaik"
   },
   {
    "name": "pi-jev",
@@ -255,6 +305,17 @@
    "url": "https://github.com/rorshopping/jev-on-a-laptop"
   },
   {
+   "name": "agent-control-plane",
+   "owner": "yacine-kellib",
+   "stars": 7,
+   "date": "2026-08-23",
+   "cat": "safety",
+   "desc": "\"Credentials ≠ authorization\": moves agent action authorization outside the model to defeat prompt injection — ships Dafny proofs. Predates the launch: shared from the stealth-era channel.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/yacine-kellib/agent-control-plane",
+   "url": "https://github.com/yacine-kellib/agent-control-plane"
+  },
+  {
    "name": "jev-me",
    "owner": "jon-devlapaz",
    "stars": 6,
@@ -273,6 +334,17 @@
    "desc": "Community build (6★ at snapshot).",
    "img": "https://opengraph.githubassets.com/1/brainstormity/Jev-Moderation-Bot",
    "url": "https://github.com/brainstormity/Jev-Moderation-Bot"
+  },
+  {
+   "name": "TerraBlind",
+   "owner": "Reisenbug",
+   "stars": 6,
+   "date": "2026-09-17",
+   "cat": "games",
+   "desc": "Terraria mod: pathfinding / building / combat pipeline — plays from a fresh world all the way to the Wall of Flesh.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/Reisenbug/TerraBlind",
+   "url": "https://github.com/Reisenbug/TerraBlind"
   },
   {
    "name": "open-jev",
@@ -405,6 +477,50 @@
    "url": "https://github.com/Dicklesworthstone/skillranker"
   },
   {
+   "name": "second-thought",
+   "owner": "rodriveiga01",
+   "stars": 4,
+   "date": "2026-09-16",
+   "cat": "safety",
+   "desc": "A seatbelt for terminals: AI judges every shell command allow / warn / block before execution.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/rodriveiga01/second-thought",
+   "url": "https://github.com/rodriveiga01/second-thought"
+  },
+  {
+   "name": "schemen-gate",
+   "owner": "sekosai",
+   "stars": 4,
+   "date": "2026-09-16",
+   "cat": "safety",
+   "desc": "Cryptographic gates, capability delegation, lockboxes and vector-isolation primitives.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/sekosai/schemen-gate",
+   "url": "https://github.com/sekosai/schemen-gate"
+  },
+  {
+   "name": "typesafe-ai",
+   "owner": "Twister915",
+   "stars": 4,
+   "date": "2026-09-16",
+   "cat": "devtools",
+   "desc": "Rust client for the TypeSafe API (async + blocking).",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/Twister915/typesafe-ai",
+   "url": "https://github.com/Twister915/typesafe-ai"
+  },
+  {
+   "name": "khatib-chess",
+   "owner": "Nesbesss",
+   "stars": 4,
+   "date": "2026-09-13",
+   "cat": "research",
+   "desc": "Rust bitboard chess engine + NNUE, ~2544 Elo — showcased in the channel.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/Nesbesss/khatib-chess",
+   "url": "https://github.com/Nesbesss/khatib-chess"
+  },
+  {
    "name": "HA-Jev",
    "owner": "AboveColin",
    "stars": 3,
@@ -503,6 +619,28 @@
    "desc": "TypeSafe (Jev) skill routing for Hermes Agent: names the one skill worth loading, before the model call. Opt-in, stdlib only, ~$0.001 per routed turn.",
    "img": "https://opengraph.githubassets.com/1/DECRUX9812/typesafe-skill-router",
    "url": "https://github.com/DECRUX9812/typesafe-skill-router"
+  },
+  {
+   "name": "typesafe-mcp",
+   "owner": "y0usaf",
+   "stars": 3,
+   "date": "2026-09-16",
+   "cat": "devtools",
+   "desc": "MCP server for TypeSafe.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/y0usaf/typesafe-mcp",
+   "url": "https://github.com/y0usaf/typesafe-mcp"
+  },
+  {
+   "name": "things-vs-stuff",
+   "owner": "cpaczek",
+   "stars": 3,
+   "date": "2026-09-16",
+   "cat": "games",
+   "desc": "Tower-defense doodle game: you type the tower, Jev decides what counters it.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/cpaczek/things-vs-stuff",
+   "url": "https://github.com/cpaczek/things-vs-stuff"
   },
   {
    "name": "jev_stock",
@@ -625,6 +763,39 @@
    "url": "https://github.com/opaielsheikh/typesafe-migration-guard"
   },
   {
+   "name": "typesafe-go",
+   "owner": "cole-gillespie",
+   "stars": 2,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Unofficial Go SDK with retries and context support.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/cole-gillespie/typesafe-go",
+   "url": "https://github.com/cole-gillespie/typesafe-go"
+  },
+  {
+   "name": "typesafe-sdk-swift",
+   "owner": "alterhq",
+   "stars": 2,
+   "date": "2026-09-15",
+   "cat": "devtools",
+   "desc": "Unofficial Swift library.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/alterhq/typesafe-sdk-swift",
+   "url": "https://github.com/alterhq/typesafe-sdk-swift"
+  },
+  {
+   "name": "typesafe-ai-playground",
+   "owner": "nickthompson480",
+   "stars": 2,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Community playground: 110 use cases, games and dilemmas.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/nickthompson480/typesafe-ai-playground",
+   "url": "https://github.com/nickthompson480/typesafe-ai-playground"
+  },
+  {
    "name": "axiom-agent-runtime",
    "owner": "axiomarchitecture",
    "stars": 1,
@@ -663,16 +834,6 @@
    "desc": "A small Next.js app for experimenting with TypeSafe AI's Jev model (System One)",
    "img": "https://opengraph.githubassets.com/1/Little-Planet-Labs/jev-playground",
    "url": "https://github.com/Little-Planet-Labs/jev-playground"
-  },
-  {
-   "name": "jev-browser",
-   "owner": "vinilana",
-   "stars": 1,
-   "date": "2026-09-17",
-   "cat": "agents",
-   "desc": "Community build (1★ at snapshot).",
-   "img": "https://opengraph.githubassets.com/1/vinilana/jev-browser",
-   "url": "https://github.com/vinilana/jev-browser"
   },
   {
    "name": "OpenJev",
@@ -733,16 +894,6 @@
    "desc": "Community build (1★ at snapshot).",
    "img": "https://opengraph.githubassets.com/1/kyrylosyzonenko/jev-browse",
    "url": "https://github.com/kyrylosyzonenko/jev-browse"
-  },
-  {
-   "name": "jev-browser",
-   "owner": "Ying-Kai-Liao",
-   "stars": 1,
-   "date": "2026-09-16",
-   "cat": "agents",
-   "desc": "Browser automation where an LLM plans and Jev (Typesafe System One) decides. Library, CLI and MCP server.",
-   "img": "https://opengraph.githubassets.com/1/Ying-Kai-Liao/jev-browser",
-   "url": "https://github.com/Ying-Kai-Liao/jev-browser"
   },
   {
    "name": "jev-mcp",
@@ -1033,6 +1184,72 @@
    "desc": "Multi-axis writing quality checker powered by TypeSafe AI's Jev model. Separate named checks, each with its own verdict and confidence.",
    "img": "https://opengraph.githubassets.com/1/BunsDev/clarity-judge",
    "url": "https://github.com/BunsDev/clarity-judge"
+  },
+  {
+   "name": "gorgona",
+   "owner": "adrianpeticila",
+   "stars": 1,
+   "date": "2026-09-03",
+   "cat": "safety",
+   "desc": "Deterministic guardrail engine — \"turn runaway agents into stone\" — plus model routing.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/adrianpeticila/gorgona",
+   "url": "https://github.com/adrianpeticila/gorgona"
+  },
+  {
+   "name": "OpenRAFormer2",
+   "owner": "kyleeasterly",
+   "stars": 1,
+   "date": "2026-09-17",
+   "cat": "games",
+   "desc": "LLMs play Command & Conquer (OpenRA fork).",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/kyleeasterly/OpenRAFormer2",
+   "url": "https://github.com/kyleeasterly/OpenRAFormer2"
+  },
+  {
+   "name": "jev-mobile",
+   "owner": "Friedjof",
+   "stars": 0,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Android control loop: Jev + Mobile MCP.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/Friedjof/jev-mobile",
+   "url": "https://github.com/Friedjof/jev-mobile"
+  },
+  {
+   "name": "Typesafe_chess_eval",
+   "owner": "AliceRoselia",
+   "stars": 0,
+   "date": "2026-09-17",
+   "cat": "research",
+   "desc": "TypeSafe chess evaluation — verdict: not great yet, but it's a prototype.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/AliceRoselia/Typesafe_chess_eval",
+   "url": "https://github.com/AliceRoselia/Typesafe_chess_eval"
+  },
+  {
+   "name": "skilldoom",
+   "owner": "robault",
+   "stars": 0,
+   "date": "2026-07-15",
+   "cat": "games",
+   "desc": "DOOM (wasm) running in the agent's browser preview, packaged as a SKILL.md — the channel's stealth-era ancestor of the Jev Doom demo.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/robault/skilldoom",
+   "url": "https://github.com/robault/skilldoom"
+  },
+  {
+   "name": "btc-jev-signal",
+   "owner": "WebGrga",
+   "stars": 0,
+   "date": "2026-09-17",
+   "cat": "finance",
+   "desc": "BTC multi-timeframe signals from Jev probabilities + Binance data.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/WebGrga/btc-jev-signal",
+   "url": "https://github.com/WebGrga/btc-jev-signal"
   }
  ],
  "tweets": [
@@ -1100,6 +1317,136 @@
    "text": "Follow-up from the account that broke the launch demo.",
    "citation": "Cited from the Hacker News launch thread. Text not mirrored at collection time.",
    "source": "hn-cite"
+  },
+  {
+   "author": "dustin_podell",
+   "handle": "dustin_podell",
+   "url": "https://x.com/dustin_podell/status/2100451281013969078",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "Showcased in the channel (thread, 2 parts).",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "_pi0_",
+   "handle": "_pi0_",
+   "url": "https://x.com/_pi0_/status/2100362008856010789",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "Showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "awlevin",
+   "handle": "awlevin",
+   "url": "https://x.com/awlevin/status/2100262612428894676",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "typesafe-computer-use author, showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "marcus_lowe",
+   "handle": "marcus_lowe",
+   "url": "https://x.com/marcus_lowe/status/2100315518930661861",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "Showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "jarrodwatts",
+   "handle": "jarrodwatts",
+   "url": "https://x.com/jarrodwatts/status/2100356151468585346",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "jev-trader author, showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "RomanSlack1",
+   "handle": "RomanSlack1",
+   "url": "https://x.com/RomanSlack1/status/2100335978229690683",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "jev-drone author, showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "iamMrDuncan",
+   "handle": "iamMrDuncan",
+   "url": "https://x.com/iamMrDuncan/status/2100267443071451486",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "typesafe-ai-benchmark author, showcased in the channel (thread, 2 parts).",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "devagrawal09",
+   "handle": "devagrawal09",
+   "url": "https://x.com/devagrawal09/status/2100341005690298687",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "jev-review author, showcased in the channel.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "Meliwat93",
+   "handle": "Meliwat93",
+   "url": "https://x.com/Meliwat93/status/2100404711283188181",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "Showcased in the channel — with video.",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
+  },
+  {
+   "author": "chalkers",
+   "handle": "chalkers",
+   "url": "https://x.com/chalkers/status/2100429696941080886",
+   "date": "2026-09-16..17",
+   "likes": null,
+   "rts": null,
+   "replies": null,
+   "media": null,
+   "text": "Showcased in the channel (thread, 2 parts).",
+   "citation": "Shared first-hand in TypeSafe's Discord #show-and-tell; engagement not mirrored.",
+   "source": "discord"
   }
  ],
  "official": [
@@ -1150,5 +1497,7 @@
   "url": "https://news.ycombinator.com/item?id=49717558",
   "points": 1835,
   "comments": 482
- }
+ },
+ "showTop": 100,
+ "sources_note": "Repo list merges GitHub search (407 matches, \"jev\" in name/description/README) with the community scrape of TypeSafe's Discord #show-and-tell (714 links, full channel history since Jul 22). Cards marked ◇ came from the channel."
 }

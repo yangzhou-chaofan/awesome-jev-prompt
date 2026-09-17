@@ -130,3 +130,5 @@ footer .disc b { color: var(--dim); }
 footer .mono { font-family: var(--mono); font-size: 11px; color: var(--faint); margin-top: 12px; letter-spacing: .06em; }
 
 @media (max-width: 860px) { .mario { grid-template-columns: 1fr; } .video-box { position: static; } }
+
+.filter-hint { font-family: var(--mono); font-size: 10.5px; color: var(--faint); align-self: center; margin-left: 4px; }

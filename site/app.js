@@ -158,11 +158,13 @@ function cardMedia(r, rank) {
 function renderShowcase() {
   const grid = document.getElementById("repo-grid");
   grid.innerHTML = "";
-  const list = REPOS
-    .map((r, i) => [r, i + 1])
-    .filter(([r]) => activeCat === "all" || r.cat === activeCat);
-  document.getElementById("r-count").textContent = list.length + " of " + REPOS.length + " · ranked by stars";
-  list.forEach(([r, rank]) => {
+  const TOP = 100; // "Top 100" is the honest cap: full list stays reachable via filters
+  const full = REPOS.map((r, i) => [r, i + 1]);
+  const list = full.filter(([r]) => activeCat === "all" || r.cat === activeCat);
+  const shown = activeCat === "all" ? list.slice(0, TOP) : list;
+  document.getElementById("r-count").textContent =
+    (activeCat === "all" ? TOP + " of " + REPOS.length + " · top " + TOP + " by stars" : list.length + " shown");
+  shown.forEach(([r, rank]) => {
     const c = el("div", "rcard");
     c.appendChild(cardMedia(r, rank));
     const body = el("div", "rbody");
@@ -172,7 +174,7 @@ function renderShowcase() {
     t.appendChild(a);
     t.appendChild(el("span", "", " / " + esc(r.owner)));
     body.appendChild(t);
-    body.appendChild(el("div", "rd", esc(r.desc)));
+    body.appendChild(el("div", "rd", (r.src === "discord" ? "◇ " : "") + esc(r.desc)));
     const foot = el("div", "rfoot");
     foot.appendChild(el("span", "st", "★ " + fmt(r.stars)));
     if (r.tweet) {
@@ -197,6 +199,8 @@ function renderFilters() {
     b.onclick = () => { activeCat = val; renderFilters(); renderShowcase(); };
     box.appendChild(b);
   });
+  const hint = el("span", "filter-hint", "◇ = surfaced from TypeSafe's Discord #show-and-tell (714-link channel scrape)");
+  box.appendChild(hint);
 }
 
 /* timeline + tweets */
@@ -273,7 +277,7 @@ fetch("data.json")
     renderTweets(d.community.tweets);
     renderOfficial(d.community.official);
     const tail = document.getElementById("tailnote");
-    if (tail) tail.textContent = "GitHub search \"jev\" (created > 2026-09-01): " + d.community.stats.ghMatches + " matches at snapshot — this page curates the top " + REPOS.length + ". The tail is forks, notebooks and name collisions.";
+    if (tail) tail.textContent = "Sources merged: GitHub search (407 matches for 'jev', created > 2026-09-01) + full scrape of TypeSafe's Discord #show-and-tell (714 links since Jul 22, incl. non-'jev'-named projects). Showing top " + Math.min(100, REPOS.length) + " by stars — pick a category to see all " + REPOS.length + ".";
   })
   .catch(e => {
     document.querySelector("main").innerHTML =

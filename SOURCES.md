@@ -52,6 +52,7 @@ verified through an alternative route (noted per entry).
 | 26 | Repo: browser-use/jev-ultrafast | https://github.com/browser-use/jev-ultrafast | ✓ api | 992★ — largest community repo, from the browser-use team |
 | 27 | HF Space: parallel-constrained-decoding | https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding | ✓ api | "Qwen-2.5-1B-RLCD" open alternative; 11 likes |
 | 28 | Ashby job board | https://jobs.ashbyhq.com/typesafe-ai | ✓ api | 4 roles (MTS Model Capabilities, MTS Backend/Platform, Dev Advocate, Member of Staff); $150k–250k + equity; stack: Python, TS/Next/Tailwind, K8s |
+| 28b | **Discord #show-and-tell full scrape (primary)** | `data/raw/discord-show-and-tell-2026-09-17.md` | ✓ first-hand (author-provided) | **714 links, full channel history Jul 22 → Sep 17**: 82 GitHub repos + ~60 X posts. Surfaced projects invisible to name-search (dspy-typesafeify 55★, blink, mosaik, agent-control-plane with Dafny proofs, skilldoom) and corrected 5 star counts. Upstream of `src:"discord"` entries |
 
 ## 3. Media & funding coverage
 
