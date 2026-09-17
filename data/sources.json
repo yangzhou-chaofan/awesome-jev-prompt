@@ -1,0 +1,63 @@
+{
+  "repo": "awesome-jev-prompt",
+  "created": "2026-09-17",
+  "disclaimer": "Unofficial. Not affiliated with TypeSafe AI. Jev and System One are TypeSafe AI product names used descriptively.",
+  "companion_page": "works/web/jev-prompt (to be published & registered at neta.art/app/jev-prompt)",
+  "counts": {
+    "official_sources": 16,
+    "media_sources": 6,
+    "community_repos_curated": 42,
+    "github_matches_total": 568,
+    "x_posts_tracked": 5,
+    "prompt_entries": 42
+  },
+  "verification": {
+    "verbatim": "content copied from an official page or the project's own README",
+    "reconstructed": "drafted from repo descriptions / doc structure; re-verify against the linked source before final publish",
+    "snapshot": "numbers captured 2026-09-17, will drift"
+  },
+  "official_sources": [
+    { "label": "typesafe.ai", "url": "https://typesafe.ai/", "kind": "website", "note": "Home — Jev early access; h1: 'We took the opposite research direction / 193.6x Faster, 444.6x Cheaper.'", "access": "curl 200, Framer site" },
+    { "label": "Launch post — Introducing System One Models & Jev", "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev", "kind": "blog", "date": "2026-09-15", "note": "Full technical announcement: RLCD, parallel sampling, pricing table, workflow evals, Doom + Wikiracing demos, FAQ", "access": "curl 200, full text extracted" },
+    { "label": "Manifesto — Composable AI: Build Prod, Not God", "url": "https://typesafe.ai/manifesto", "note": "Three-step plan; 'We're building prod, not God.'", "access": "curl 200, full text extracted" },
+    { "label": "Team page", "url": "https://typesafe.ai/team", "note": "Founders Diogo Almeida (CEO), Sasha Sheng (COO), Erik Gafni (CTO); culture; values; base64 easter egg 'TypeSafe AI Intelligence Now'", "access": "curl 200, full text extracted" },
+    { "label": "Blog — Lies, Damned Lies, and Benchmarks", "url": "https://typesafe.ai/blog/antibenchmaxxing", "date": "2026-09-11", "note": "Anti-benchmaxxing stance; no public benchmark tables; evals as dated snapshots", "access": "curl 200, full text extracted" },
+    { "label": "Blog — The Bitterest Lesson", "url": "https://typesafe.ai/blog/bitterest-lesson", "date": "2026-09-10", "note": "task > data > compute > algorithms; InstructGPT anecdote", "access": "curl 200, full text extracted" },
+    { "label": "Blog — AI: too good to be true, too bad to be useful", "url": "https://typesafe.ai/blog/ai-too-good-to-be-true-too-bad-to-be-useful-typesafe-ai", "date": "2026-06-19", "note": "Embedded talk video (YouTube o-y1HJ6buGQ, AI Council channel)", "access": "curl 200 + YouTube oEmbed" },
+    { "label": "Blog — Diogo Almeida, Founders You Should Know", "url": "https://typesafe.ai/blog/diogo-almeida---founders-you-should-know", "date": "2026-03-31", "note": "Embedded interview video (YouTube LE3bGTaAgOE)", "access": "curl 200 + YouTube oEmbed" },
+    { "label": "Docs — System One concepts", "url": "https://docs.typesafe.ai/concepts/system-one", "note": "Choice/Score/Noul primitives table; Kahneman naming; vs-LLM comparison", "access": "curl 200, full text extracted" },
+    { "label": "Docs — State", "url": "https://docs.typesafe.ai/concepts/state", "note": "State formats (string/object/array) + verbatim support-ticket example", "access": "curl 200, full text extracted" },
+    { "label": "Docs — Models & pricing", "url": "https://docs.typesafe.ai/models", "note": "Jev 1.13 (jev-1.13.0): $42/Btok input-only, 250k tok/s, 1200 req/min", "access": "curl 200, full text extracted" },
+    { "label": "Docs — Cookbooks (20+)", "url": "https://docs.typesafe.ai/cookbooks", "note": "autoformat, citation_check, classification_using_confidence, classifying_rag_passages, consistency_choice, date_extraction, entity_alignment, function_calling, hierarchical_classification, llm_guardrails, parallel_questions, pre_parsed_value_extraction, rerank, sde_cascade, semantic_find, skill_suggestion", "access": "sitemap.xml" },
+    { "label": "Docs — Patterns", "url": "https://docs.typesafe.ai/patterns", "note": "speculative fan-out, confidence-gated routing, composite scoring, intent routing", "access": "sitemap.xml" },
+    { "label": "Workflow evals site", "url": "https://evals.typesafe.ai/", "note": "Per-model workflow accuracy/cost/latency incl. Jev 67.8% @$0.0004/0.4s vs opus 5 73.1% @$0.1761/37.8s", "access": "curl 200, page titles parsed" },
+    { "label": "GitHub org typesafe-ai", "url": "https://github.com/typesafe-ai", "note": "10 public repos, 187 followers: system-one-adapter-python 63★, typesafe-sdk-js 57★, skills 56★, typesafe-sdk-python 33★, LLaDA & vllm forks", "access": "GitHub API" },
+    { "label": "Press release (Business Wire)", "url": "https://www.businesswire.com/news/home/20260915525333/en/", "date": "2026-09-15", "note": "$40M seed led by DCVC; James Hardiman quote; founded 2024, SF", "access": "via Morningstar syndication, full text" }
+  ],
+  "community_sources": [
+    { "label": "HN launch thread", "url": "https://news.ycombinator.com/item?id=49717558", "note": "1835 pts / 482 comments; 162 top-level; full comment tree captured", "access": "HN Algolia API items/49717558" },
+    { "label": "X — @faadilhshaik Mario post", "url": "https://x.com/faadilhshaik/status/2100086301894881578", "note": "2278 likes / 159 RT / 76 replies; video; pairs with typesafe-mario repo (created 90s after post)", "access": "fxtwitter + vxtwitter APIs" },
+    { "label": "X — @CompleteSkeptic launch demo", "url": "https://x.com/CompleteSkeptic/status/2099925682726002904", "note": "Jev plays Doom video; most-cited artifact in HN thread; metrics not mirrored", "access": "HN citation" },
+    { "label": "X — @danshipper", "url": "https://x.com/danshipper/status/2099947471518474522", "note": "Cited in HN thread; text not mirrored at collection time", "access": "HN citation" },
+    { "label": "X — @harshagundal", "url": "https://x.com/harshagundal/status/2100044305536889015", "note": "Cited in HN thread; text not mirrored", "access": "HN citation" },
+    { "label": "X — @CompleteSkeptic follow-up", "url": "https://x.com/CompleteSkeptic/status/2100067328620896408", "note": "Cited in HN thread; text not mirrored", "access": "HN citation" },
+    { "label": "The Register coverage", "url": "https://www.theregister.com/ai-and-ml/2026/09/16/typesafe_ai_debuts_model_for_machines_that_plays_doom/5296711", "date": "2026-09-16", "note": "'TypeSafe AI debuts model for machines that plays Doom'", "access": "HN title; direct scrape blocked by bot-wall" },
+    { "label": "jevlike (reverse engineering)", "url": "https://github.com/vinnylarouge/jevlike", "note": "496★; option-attention head; Doom/chess checkpoints; README fully captured", "access": "GitHub API + raw README" },
+    { "label": "typesafe-mario", "url": "https://github.com/fhshaik/typesafe-mario", "note": "130★; full README captured incl. state schema (player/trajectory/hazard/terrain/reaction_timing/recent_control/episode) + 7-action set", "access": "GitHub API + raw README" },
+    { "label": "GitHub search: jev (created >2026-09-01)", "url": "https://github.com/search?q=jev&type=repositories", "note": "568 matches on 2026-09-17; top-42 curated in data/community.json", "access": "GitHub search API, two queries" },
+    { "label": "HF Space parallel-constrained-decoding", "url": "https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding", "note": "'Qwen-2.5-1B-RLCD' open alternative experiment; 11 likes", "access": "HF API" },
+    { "label": "Ashby job board", "url": "https://jobs.ashbyhq.com/typesafe-ai", "note": "4 roles; salary $150k–250k; stack: Python, TS/Next.js/Tailwind, K8s, Claude Code/Cursor", "access": "Ashby posting API, full JDs" }
+  ],
+  "media_sources": [
+    { "label": "techstartups.com", "url": "https://techstartups.com/2026/09/16/typesafe-ai-an-ai-startup-founded-by-chatgpt-co-inventor-emerges-from-stealth/", "note": "$40M seed framing" },
+    { "label": "finsmes.com", "url": "https://www.finsmes.com/2026/09/typesafe-ai-raises-40m-in-seed-funding.html", "note": "funding brief" },
+    { "label": "stackfutures.com", "url": "https://stackfutures.com/blog/typesafe-ai-40m-seed-system-one-jev-structured-decisions-2026/", "note": "typed decisions angle" },
+    { "label": "datagrom.com", "url": "https://www.datagrom.com/ai-news/typesafe-ai-raises-40m-for-software-native-ai-2d4b00bf", "note": "valuation ~$200M (unverified by primary source)" },
+    { "label": "theroboticsmedia.com", "url": "https://theroboticsmedia.com/article/typesafe-ai-40m-seed-dcvc-jev-composable-ai-almeida-september-15-2026", "note": "timeline recap" },
+    { "label": "ts2.tech", "url": "https://ts2.tech/en/typesafe-ai-raises-40-million-for-jev-but-its-445x-cost-claim-is-still-self-reported/", "note": "skeptical angle on self-reported 445x claim; URL now 404 — captured via DDG snippet" }
+  ],
+  "internal_prior_work": [
+    { "label": "typesafe-ai-情报汇总.md", "path": "/workspace/typesafe-ai-情报汇总.md", "note": "full intelligence dossier from 2026-09-17 research turn" },
+    { "label": "jev-atlas work", "path": "/workspace/works/web/jev-atlas/", "note": "published ecosystem tracker (neta.art/w/1cc738fb-2066-40a8-98a0-22696a993970); data.json holds the structured 42-repo + 5-tweet dataset reused here" }
+  ]
+}

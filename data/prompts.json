@@ -1,0 +1,197 @@
+{
+  "generated": "2026-09-17",
+  "note": "42 prompt-shaped entries distilled from official docs, the typesafe-mario README (verbatim where marked), and community repo descriptions. Each entry = the decision a Jev call answers, the state you feed it, and the primitive(s) invoked. Verbatim blocks are copied from official pages or project READMEs; reconstructed entries follow official doc structure.",
+  "verification_legend": {
+    "verbatim": "copied from an official page or the project's own README",
+    "reconstructed": "drafted from doc structure / repo descriptions — re-verify against linked source before final publish"
+  },
+  "official_resources": [
+    { "label": "typesafe.ai", "url": "https://typesafe.ai/" },
+    { "label": "docs.typesafe.ai", "url": "https://docs.typesafe.ai/" },
+    { "label": "console.typesafe.ai", "url": "https://console.typesupport.ai/" },
+    { "label": "evals.typesafe.ai", "url": "https://evals.typesafe.ai/" },
+    { "label": "github.com/typesafe-ai", "url": "https://github.com/typesafe-ai" },
+    { "label": "@typesafeai on X", "url": "https://x.com/typesafeai" },
+    { "label": "discord.gg/typesafe", "url": "https://discord.gg/typesafe" }
+  ],
+  "sections": [
+    {
+      "id": "primitives",
+      "title": "Primitives — the three question types",
+      "source": "https://docs.typesafe.ai/concepts/system-one",
+      "verification": "verbatim",
+      "prompts": [
+        {
+          "id": "primitive-choice",
+          "title": "Choice — pick from an enumerated answer space",
+          "example_answer_space": "billing, technical, or account",
+          "example_output": "choice: \"billing\"",
+          "use": "Ticket routing, action selection, classification with a fixed label set."
+        },
+        {
+          "id": "primitive-score",
+          "title": "Score — a number on a defined scale",
+          "example_answer_space": "0 = calm, 1 = frustrated, 2 = very frustrated",
+          "example_output": "score: 1.4",
+          "use": "Frustration, urgency, quality, danger — anything that lives on a scale."
+        },
+        {
+          "id": "primitive-noul",
+          "title": "Noul — true/false with probability",
+          "example_answer_space": "True or false",
+          "example_output": "noul: 0.95",
+          "use": "Gate checks: is this a refund request? Is this jailbreak? Should we escalate?"
+        }
+      ]
+    },
+    {
+      "id": "state-format",
+      "title": "State — how to feed Jev",
+      "source": "https://docs.typesafe.ai/concepts/state",
+      "verification": "verbatim",
+      "prompts": [
+        {
+          "id": "state-string",
+          "title": "Plain-string state",
+          "code": "state = \"My card was charged twice.\"",
+          "use": "Single-text judgments: classify a message, score a passage."
+        },
+        {
+          "id": "state-object",
+          "title": "Object state — recommended default",
+          "code": "{\"message\": \"My card was charged twice.\", \"order_id\": \"A-104\"}",
+          "use": "Named fields keep relationships clear; think of it as the material you'd hand a panel of experts."
+        },
+        {
+          "id": "state-array",
+          "title": "Array state — message sequences",
+          "code": "[\"Hi\", \"My customer number is TS1337.\", \"My card was charged twice.\"]",
+          "use": "Conversation turns or record sequences."
+        },
+        {
+          "id": "state-full-example",
+          "title": "Full example: support conversation + order + policy",
+          "code": "{\n  \"ticket\": {\n    \"subject\": \"Duplicate charge\",\n    \"messages\": [\n      {\"from\": \"customer\", \"text\": \"I was charged twice for order A-104. Please refund the duplicate.\"},\n      {\"from\": \"support\", \"text\": \"We are checking the charges.\"}\n    ]\n  },\n  \"order\": {\n    \"id\": \"A-104\",\n  \"charges\": [\n      {\"amount_usd\": 49, \"status\": \"captured\"},\n      {\"amount_usd\": 49, \"status\": \"captured\"}\n    ]\n  },\n  \"refund_policy\": \"Duplicate charges are eligible for a refund.\"\n}",
+          "use": "One state can carry a conversation, records, and a policy — questions then compare the parts."
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Architectural patterns",
+      "source": "https://docs.typesafe.ai/patterns",
+      "verification": "reconstructed",
+      "prompts": [
+        {
+          "id": "pattern-fanout",
+          "title": "Speculative fan-out",
+          "use": "Ask many independent questions of one state in parallel — Jev's parallel sampler prices them near zero."
+        },
+        {
+          "id": "pattern-confidence-routing",
+          "title": "Confidence-gated routing",
+          "use": "Act autonomously above a confidence threshold; escalate to a human or an LLM below it. The core production loop."
+        },
+        {
+          "id": "pattern-composite-scoring",
+          "title": "Composite scoring",
+          "use": "Weight several Score primitives into one ranking signal."
+        },
+        {
+          "id": "pattern-intent-routing",
+          "title": "Intent routing",
+          "use": "Choice over intent labels at the front door of a system; deterministic code takes over from there."
+        }
+      ]
+    },
+    {
+      "id": "cookbooks",
+      "title": "Official cookbooks (one decision each)",
+      "source": "https://docs.typesafe.ai/cookbooks",
+      "verification": "reconstructed",
+      "prompts": [
+        { "id": "ck-autoformat", "title": "Autoformat — decide formatting per block", "url": "https://docs.typesafe.ai/cookbooks/autoformat" },
+        { "id": "ck-citation", "title": "Citation check — verify claims against sources", "url": "https://docs.typesafe.ai/cookbooks/citation_check" },
+        { "id": "ck-classify-confidence", "title": "Classification using confidence", "url": "https://docs.typesafe.ai/cookbooks/classification_using_confidence" },
+        { "id": "ck-rag-passages", "title": "Classifying RAG passages", "url": "https://docs.typesafe.ai/cookbooks/classifying_rag_passages" },
+        { "id": "ck-consistency", "title": "Self-consistency choice", "url": "https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook" },
+        { "id": "ck-date-extraction", "title": "Date extraction", "url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook" },
+        { "id": "ck-entity-alignment", "title": "Entity alignment", "url": "https://docs.typesafe.ai/cookbooks/entity_alignment" },
+        { "id": "ck-function-calling", "title": "Function calling", "url": "https://docs.typesafe.ai/cookbooks/function_calling" },
+        { "id": "ck-hierarchical", "title": "Hierarchical classification", "url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification" },
+        { "id": "ck-guardrails", "title": "LLM guardrails — score/judge/detect jailbreaks", "url": "https://docs.typesafe.ai/cookbooks/llm_guardrails" },
+        { "id": "ck-parallel", "title": "Parallel questions", "url": "https://docs.typesafe.ai/cookbooks/parallel_questions" },
+        { "id": "ck-preparsed", "title": "Pre-parsed value extraction", "url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook" },
+        { "id": "ck-rerank", "title": "Rerank", "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe" },
+        { "id": "ck-sde-cascade", "title": "SDE cascade", "url": "https://docs.typesafe.ai/cookbooks/sde_cascade" },
+        { "id": "ck-semantic-find", "title": "Semantic find", "url": "https://docs.typesafe.ai/cookbooks/semantic_find" },
+        { "id": "ck-skill-suggestion", "title": "Skill suggestion", "url": "https://docs.typesafe.ai/cookbooks/skill_suggestion" }
+      ]
+    },
+    {
+      "id": "case-mario",
+      "title": "Case study — typesafe-mario: a full state schema (verbatim)",
+      "source": "https://github.com/fhshaik/typesafe-mario",
+      "verification": "verbatim",
+      "prompts": [
+        {
+          "id": "mario-decision",
+          "title": "The decision — one NES controller action per tick",
+          "primitive": "Choice",
+          "answer_space": "noop, right, right_jump, right_run, right_run_jump, jump, left",
+          "goal_line": "Goal: Reach the flag in World 1-1 without dying."
+        },
+        {
+          "id": "mario-state",
+          "title": "The state — object-centric JSON from emulator telemetry + RAM",
+          "code": "{\n  \"player\":          { \"position, velocity, grounded state, jump phase, power-up\" },\n  \"trajectory\":      { \"airtime, distance since takeoff, committed gap crossing\" },\n  \"hazard\":          { \"up to 3 enemies: projected positions, contact timing, takeoff deadline\" },\n  \"terrain\":         { \"obstacle/gap geometry, observation reliability, last grounded preview\" },\n  \"reaction_timing\": { \"action duration, measured observation-to-action delay\" },\n  \"recent_control\":  { \"chosen action, duration, progress gained, observed outcome\" },\n  \"episode\":         { \"lives, clock, progress, stalls, death, level completion\" }\n}",
+          "use": "The model never sees a screenshot — this is the canonical example of 'state as data structure'. Each decision is logged to JSONL with latency, probabilities, and confidence."
+        },
+        {
+          "id": "mario-loop",
+          "title": "The loop",
+          "code": "NES emulator -> telemetry/RAM parser -> structured JSON -> Jev Choice -> controller input\n                                                   (decision every 8 emulator steps)",
+          "use": "Same shape as TypeSafe's own Doom demo: deterministic code + semantic branch points."
+        }
+      ]
+    },
+    {
+      "id": "case-demos",
+      "title": "Official demos — decisions that made the launch",
+      "source": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "verification": "verbatim (summarized from the launch post)",
+      "prompts": [
+        {
+          "id": "demo-doom",
+          "title": "Doom — 10 Jev queries/second in real time",
+          "primitive": "Choice (controller buttons from structured state)",
+          "use": "~$7/hour of inference; state is structured game data, not images."
+        },
+        {
+          "id": "demo-wikiracing",
+          "title": "Wikiracing — pick the next link among hundreds",
+          "primitive": "Choice (cardinality up to 255; two-stage scoring for high-cardinality picks)",
+          "use": "Shows compounding value of no-hallucination under high-cardinality choices."
+        }
+      ]
+    },
+    {
+      "id": "community-patterns",
+      "title": "Community patterns — what the first 72 hours built",
+      "source": "GitHub search: jev, created > 2026-09-01 (568 matches)",
+      "verification": "reconstructed (from repo descriptions)",
+      "prompts": [
+        { "id": "cp-trading", "title": "Per-block trade decision (jev-trader)", "primitive": "Choice + Noul gate", "use": "One AI trade decision every Monad block, Kuru MON-USDC. github.com/jarrodwatts/jev-trader" },
+        { "id": "cp-computer-use", "title": "Screen-action classification at $0.0002/step (typesafe-computer-use)", "primitive": "Choice over actions from OCR text", "use": "github.com/awlevin/typesafe-computer-use" },
+        { "id": "cp-drone", "title": "Drone judgment loop (jev-drone)", "primitive": "Choice + Score(danger)", "use": "Camera-only autonomy in MuJoCo. github.com/RomanSlack/jev-drone" },
+        { "id": "cp-router", "title": "Cheapest-model routing (jev-router)", "primitive": "Choice over model list", "use": "Route Claude Code tasks to the cheapest capable model. github.com/gargpratyush/jev-router" },
+        { "id": "cp-guardrail", "title": "Tool-result sieve (winnow)", "primitive": "Noul(keep?) + Score(relevance)", "use": "Every tool result judged before it enters context. github.com/GhalebDweikat/winnow" },
+        { "id": "cp-review", "title": "Staged code review (jev-review)", "primitive": "Choice(stage) + Score(severity)", "use": "github.com/devagrawal09/jev-review" },
+        { "id": "cp-graphnav", "title": "Graph neighbor classification (neo4jev)", "primitive": "Choice over neighbor sets", "use": "Jev navigating Neo4j graphs. github.com/jexp/neo4jev" },
+        { "id": "cp-migration", "title": "DB migration safety review (typesafe-migration-guard)", "primitive": "Noul(safe?) + Score(risk)", "use": "github.com/opaielsheikh/typesafe-migration-guard" },
+        { "id": "cp-snake", "title": "One choice per tick (typesafe-snake)", "primitive": "Choice(legal moves)", "use": "github.com/sorrycc/typesafe-snake" },
+        { "id": "cp-commit", "title": "Commit triage (commit-miner)", "primitive": "Choice(fix type/CWE)", "use": "Classify diffs: bugfix, security/CWE, changelog. github.com/devanshbatham/commit-miner" }
+      ]
+    }
+  ]
+}

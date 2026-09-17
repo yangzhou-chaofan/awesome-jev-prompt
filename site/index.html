@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 100 Jev Showcase &amp; Jev Prompts — States, Decisions &amp; Patterns for TypeSafe's Jev</title>
+<meta name="description" content="The Top 100 Jev showcase: 100 community builds with preview cards, 5 tracked X posts with video, 42 Jev prompt & state patterns (Choice, Score, Noul), 16 official cookbooks, and the typesafe-mario case study. Unofficial, community-maintained.">
+<meta property="og:title" content="Top 100 Jev Showcase & Jev Prompts">
+<meta property="og:description" content="100 community builds with preview cards, 42 prompt & state patterns, the Mario case study. The unofficial atlas for TypeSafe's Jev (System One Model).">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">◈ TOP 100 JEV SHOWCASE · SNAPSHOT 2026-09-17 · UNOFFICIAL</span>
+    <h1>Top 100 Jev Showcase<br><span class="grad">&amp; Jev Prompts</span></h1>
+    <p class="tagline">state: {…} → questions: [Choice · Score · Noul] → typed decisions, 70–500ms</p>
+    <p class="sub">Jev takes a <b>state</b> and returns <b>typed decisions with calibrated probabilities</b>.
+      This atlas ranks the <b>Top 100 community builds</b> with live preview cards, tracks the X posts
+      that started them, and collects the <b>42 prompt &amp; state patterns</b> plus <b>16 official cookbooks</b>
+      that make those decisions good.</p>
+    <div class="cta">
+      <button class="btn primary" onclick="document.getElementById('showcase').scrollIntoView()">🏆 Top 100 showcase ↓</button>
+      <button class="btn" onclick="document.getElementById('mario').scrollIntoView()">🍄 Watch Mario play</button>
+      <a class="btn" href="https://docs.typesafe.ai/" target="_blank" rel="noopener">↗ Official docs</a>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO VIDEO -->
+  <section id="mario">
+    <div class="sec-head"><h2>The case study</h2><span class="k">the 90-second repo</span></div>
+    <p class="sec-sub">@faadilhshaik posted Jev playing Super Mario Bros. (2,278 likes), then pushed
+      <a href="https://github.com/fhshaik/typesafe-mario" target="_blank" rel="noopener">typesafe-mario</a> 90 seconds later.
+      The model never sees a screenshot.</p>
+    <div class="mario">
+      <div class="video-box">
+        <video controls muted preload="metadata" poster="https://pbs.twimg.com/amplify_video_thumb/2100085174826647552/img/6YMRQKKZYBPsW2oo.jpg">
+          <source src="https://video.twimg.com/amplify_video/2100085174826647552/vid/avc1/960x540/OED8oA5c7R4eadJG.mp4?tag=29" type="video/mp4">
+        </video>
+        <div class="video-cap">▣ gameplay via @faadilhshaik · 0:31 · NES emulator + Jev Choice</div>
+      </div>
+      <div>
+        <div class="mario-facts" id="mario-facts"></div>
+        <div class="arch" id="arch"></div>
+        <div class="mario-links">
+          <a class="btn" href="https://x.com/faadilhshaik/status/2100086301894881578" target="_blank" rel="noopener">▶ The X post</a>
+          <a class="btn" href="https://github.com/fhshaik/typesafe-mario" target="_blank" rel="noopener">★ The repo</a>
+        </div>
+      </div>
+    </div>
+    <div class="codebox" id="mario-schema"></div>
+  </section>
+
+  <!-- GRAMMAR -->
+  <section id="grammar">
+    <div class="sec-head"><h2>Jev prompts: the grammar</h2><span class="k">verbatim from docs.typesafe.ai</span></div>
+    <p class="sec-sub">Three primitives, three state shapes. Everything else is composition.</p>
+    <div class="g-grid" id="grammar-grid"></div>
+  </section>
+
+  <!-- LIBRARY -->
+  <section id="library">
+    <div class="sec-head"><h2>The pattern library</h2><span class="k" id="p-count"></span></div>
+    <p class="sec-sub">Every entry = one decision: the state you feed, the question you ask, the primitive you use.</p>
+    <div id="prompt-sections"></div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase">
+    <div class="sec-head"><h2>🏆 Top 100 Jev showcase</h2><span class="k" id="r-count"></span></div>
+    <p class="sec-sub">Ranked by stars at snapshot (2026-09-17). Every card is the project's own GitHub preview.
+      Filter by what it does.</p>
+    <div class="filters" id="filters"></div>
+    <div class="rgrid" id="repo-grid"></div>
+    <p class="tailnote" id="tailnote"></p>
+  </section>
+
+  <!-- TIMELINE + TWEETS -->
+  <section id="ecosystem">
+    <div class="sec-head"><h2>The 72 hours</h2><span class="k">community pulse</span></div>
+    <p class="sec-sub">What happened after launch — the posts that lit the fuse.</p>
+    <div class="tl" id="tl"></div>
+    <div class="grid" id="tweet-grid"></div>
+  </section>
+
+  <!-- OFFICIAL -->
+  <section id="official">
+    <div class="sec-head"><h2>Official map</h2><span class="k">start here</span></div>
+    <div class="official" id="official-grid"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="disc"><b>Unofficial.</b> Not affiliated with or endorsed by TypeSafe AI. "Jev" and "System One"
+      are TypeSafe AI's product names, referenced descriptively. Preview images are GitHub's own OG cards for each
+      repository; the gameplay clip is embedded from the author's original X post. Star counts and engagement
+      metrics are snapshots from 2026-09-17 and will drift. Companion repo: <b>awesome-jev-prompt</b>.</p>
+    <p class="mono">∵ ⩆ TOP 100 JEV SHOWCASE · CHOICE · SCORE · NOUL ⩆ ∵</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
