@@ -281,6 +281,42 @@ function renderYT() {
   });
 }
 
+/* video wall */
+const VWALL = [
+  { v: "assets/videos/doom.mp4", p: "assets/tweets/doom-vposter.jpg", title: "The Doom launch demo", who: "@CompleteSkeptic · the clip that lit the fuse", url: "https://x.com/CompleteSkeptic/status/2099925682726002904" },
+  { v: "assets/videos/mario.mp4", p: "assets/tweets/mario-vposter.jpg", title: "Jev plays Super Mario Bros.", who: "@faadilhshaik · repo 90s later", url: "https://x.com/faadilhshaik/status/2100086301894881578" },
+  { v: "assets/videos/jevlike.mp4", p: "assets/tweets/jevlike-vposter.jpg", title: "jevlike — the open replica", who: "Doom buttons then chess, one attention head", url: "https://github.com/vinnylarouge/jevlike" },
+  { v: "assets/videos/drone.mp4", p: "assets/tweets/drone-vposter.jpg", title: "Camera-only drone judgment", who: "@RomanSlack1 · MuJoCo, Jev at 2.5Hz", url: "https://x.com/RomanSlack1/status/2100335978229690683" },
+  { v: "assets/videos/ariel.mp4", p: "assets/tweets/ariel-vposter.jpg", title: "Community build showcase", who: "@arielweinberger", url: "https://x.com/arielweinberger/status/2100687687057285215" },
+  { v: "assets/videos/attract.mp4", p: "assets/tweets/attract-vposter.jpg", title: "AttractMode's build", who: "@AttractModeIO", url: "https://x.com/attractmodeio/status/2100723340021276739" },
+  { v: "assets/videos/meliwat.mp4", p: "assets/tweets/meliwat-vposter.jpg", title: "@Meliwat93's demo", who: "shared in #show-and-tell", url: "https://x.com/meliwat93/status/2100404711283188181" }
+];
+function renderVideoWall() {
+  const grid = document.getElementById("video-grid");
+  VWALL.filter(x => x.v).forEach(x => {
+    const c = el("div", "vcard");
+    const vid = el("video");
+    vid.muted = true; vid.loop = true; vid.playsInline = true; vid.preload = "none";
+    vid.poster = x.p;
+    const src = el("source"); src.src = x.v; src.type = "video/mp4";
+    vid.appendChild(src);
+    c.appendChild(vid);
+    c.appendChild(el("div", "vt", x.title));
+    c.appendChild(el("div", "vw", x.who));
+    if (x.url) {
+      c.style.cursor = "pointer";
+      c.onclick = (e) => { if (!vid.paused && e.target === vid) { location.href = x.url; return; } };
+      const a = el("a", "vlink", "source ↗");
+      a.href = x.url; a.target = "_blank"; a.rel = "noopener";
+      c.appendChild(a);
+    }
+    c.addEventListener("mouseenter", () => vid.play().catch(() => {}));
+    c.addEventListener("mouseleave", () => vid.pause());
+    vid.addEventListener("click", () => vid.paused ? vid.play().catch(()=>{}) : vid.pause());
+    grid.appendChild(c);
+  });
+}
+
 /* boot */
 fetch("data.json")
   .then(r => r.json())
@@ -293,12 +329,18 @@ fetch("data.json")
     REPOS = d.community.repos;
     // add poster to the mario tweet card media
     const mt = d.community.tweets.find(t => t.handle === "faadilhshaik");
-    if (mt) mt.media = { poster: "assets/media/mario-poster.jpg" };
+    if (mt) mt.media = { poster: "assets/tweets/mario-vposter.jpg" };
+    // attach self-hosted posters to tracked tweets
+    const TP = { CompleteSkeptic: "doom", dustin_podell: "dustin", _pi0_: "pi0", arielweinberger: "ariel",
+      AttractModeIO: "attract", zain_hoda: "zain", Meliwat93: "meliwat", RomanSlack1: "drone",
+      jarrodwatts: "trader", awlevin: "awlevin", marcus_lowe: "lowe", danshipper: "shipper", harshagundal: "harsha" };
+    d.community.tweets.forEach(t => { const s = TP[t.handle]; if (s) t.media = { poster: "assets/tweets/" + s + ".jpg" }; });
     renderFilters();
     renderShowcase();
     renderTimeline(d.community.timeline);
     renderTweets(d.community.tweets);
     renderYT();
+    renderVideoWall();
     renderOfficial(d.community.official);
     const tail = document.getElementById("tailnote");
     if (tail) tail.textContent = "Sources merged: GitHub search (407 matches for 'jev', created > 2026-09-01) + full scrape of TypeSafe's Discord #show-and-tell (714 links since Jul 22, incl. non-'jev'-named projects). Showing top " + Math.min(100, REPOS.length) + " by stars — pick a category to see all " + REPOS.length + ".";

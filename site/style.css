@@ -151,3 +151,12 @@ footer .mono { font-family: var(--mono); font-size: 11px; color: var(--faint); m
 .ytcard .yimg.noimg .play { position: static; transform: none; margin: 40px auto; }
 .ytcard .yt { font-size: 13px; font-weight: 600; padding: 10px 12px 2px; line-height: 1.4; }
 .ytcard .yw { font-family: var(--mono); font-size: 10.5px; color: var(--faint); padding: 0 12px 11px; }
+
+/* video wall */
+.vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.vcard { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; padding-bottom: 10px; transition: .15s; }
+.vcard:hover { border-color: var(--faint); transform: translateY(-2px); }
+.vcard video { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #000; }
+.vcard .vt { font-size: 13px; font-weight: 600; padding: 9px 12px 1px; }
+.vcard .vw { font-family: var(--mono); font-size: 10.5px; color: var(--faint); padding: 0 12px; }
+.vcard .vlink { position: absolute; top: 8px; right: 8px; font-family: var(--mono); font-size: 10px; background: rgba(10,12,16,.8); border: 1px solid var(--line); border-radius: 5px; padding: 2px 8px; }

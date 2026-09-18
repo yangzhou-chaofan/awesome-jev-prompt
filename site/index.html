@@ -44,8 +44,10 @@
       The model never sees a screenshot.</p>
     <div class="mario">
       <div class="video-box">
-        <img class="still" src="assets/media/mario-poster.jpg" alt="Jev playing Super Mario Bros. — @faadilhshaik" onerror="this.onerror=null;this.src='assets/cards/fhshaik-typesafe-mario.webp'">
-        <div class="video-cap">▣ gameplay still via @faadilhshaik · click through to X for the video</div>
+        <video controls muted loop preload="metadata" poster="assets/tweets/mario-vposter.jpg">
+          <source src="assets/videos/mario.mp4" type="video/mp4">
+        </video>
+        <div class="video-cap">▶ gameplay via @faadilhshaik · the original clip, self-hosted</div>
       </div>
       <div>
         <div class="mario-facts" id="mario-facts"></div>
@@ -57,6 +59,13 @@
       </div>
     </div>
     <div class="codebox" id="mario-schema"></div>
+  </section>
+
+  <!-- VIDEO WALL -->
+  <section id="videos">
+    <div class="sec-head"><h2>The video wall</h2><span class="k">real footage, self-hosted</span></div>
+    <p class="sec-sub">Six clips from the first 72 hours — the Doom launch demo, Mario, a reverse-engineered Jev playing chess, a drone judge, and more. Hover or tap to play.</p>
+    <div class="vgrid" id="video-grid"></div>
   </section>
 
   <!-- GRAMMAR -->
