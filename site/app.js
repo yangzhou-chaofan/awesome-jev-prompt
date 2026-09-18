@@ -155,6 +155,31 @@ function cardMedia(r, rank) {
   else wrap.appendChild(el("span", "rk", "#" + rank));
   return wrap;
 }
+/* worth-study picks — editorial, refreshed per snapshot */
+const STUDY = [
+  { icon: "🌌", owner: "phyous", name: "tsai-sc", why: "Jev beat StarCraft's Strongarm mission — verified victory screen, attempt 16. The quietest hard result in the ecosystem." },
+  { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." },
+  { icon: "🏠", owner: "AboveColin", name: "HA-Jev", why: "Home Assistant integration: ask your house a question, get probability/choice/score entities." },
+  { icon: "🪢", owner: "yacine-kellib", name: "agent-control-plane", why: "Pre-launch: authorization moved outside the model, with Dafny proofs. The guardrail thesis in one repo." }
+];
+function renderStudy() {
+  const row = document.getElementById("study-row");
+  STUDY.forEach(s => {
+    const d = REPOS.find(r => r.owner === s.owner && r.name === s.name);
+    const a = el("a", "study");
+    a.href = d ? repoUrl(d) : "https://github.com/" + s.owner + "/" + s.name;
+    a.target = "_blank"; a.rel = "noopener";
+    a.appendChild(el("div", "si", s.icon));
+    const box = el("div");
+    const t = el("div", "st", s.name + " ");
+    t.appendChild(el("span", "", "/" + s.owner + (d ? " · ★ " + d.stars : "")));
+    box.appendChild(t);
+    box.appendChild(el("div", "sd", s.why));
+    a.appendChild(box);
+    row.appendChild(a);
+  });
+}
+
 function renderShowcase() {
   const grid = document.getElementById("repo-grid");
   grid.innerHTML = "";
@@ -336,6 +361,7 @@ fetch("data.json")
       jarrodwatts: "trader", awlevin: "awlevin", marcus_lowe: "lowe", danshipper: "shipper", harshagundal: "harsha" };
     d.community.tweets.forEach(t => { const s = TP[t.handle]; if (s) t.media = { poster: "assets/tweets/" + s + ".jpg" }; });
     renderFilters();
+    renderStudy();
     renderShowcase();
     renderTimeline(d.community.timeline);
     renderTweets(d.community.tweets);

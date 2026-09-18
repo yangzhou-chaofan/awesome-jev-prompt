@@ -712,10 +712,10 @@
    {
     "name": "tsai-sc",
     "owner": "phyous",
-    "stars": 6,
+    "stars": 9,
     "date": "2026-09-16",
     "cat": "agents",
-    "desc": "TypeSafe Jev controls original StarCraft shareware through keyboard and mouse with recorded action probabilities.",
+    "desc": "Jev controls original StarCraft shareware through keyboard and mouse — completed the Strongarm mission with a verified victory screen (attempt 16).",
     "img": "https://opengraph.githubassets.com/1/phyous/tsai-sc",
     "url": "https://github.com/phyous/tsai-sc"
    },

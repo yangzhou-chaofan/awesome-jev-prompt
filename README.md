@@ -69,6 +69,15 @@ state = {
 | 9 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | 40 | Local-first MCP plugin for continuous quality review |
 | 10 | [RomanSlack/jev-drone](https://github.com/RomanSlack/jev-drone) | 36 | Camera-only autonomous drone, Jev at 2.5Hz |
 
+### ⭐ Worth studying (beyond the star ranking)
+
+| | Project | Why |
+|---|---|---|
+| 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. The quietest hard result in the ecosystem. |
+| 🧩 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | The reverse-engineering: one option-attention head reproducing the Jev shape. |
+| 🏠 | [AboveColin/HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant integration: ask your house a question. |
+| 🪢 | [yacine-kellib/agent-control-plane](https://github.com/yacine-kellib/agent-control-plane) | Pre-launch guardrail thesis: authorization outside the model, Dafny proofs. |
+
 ➡️ **[Full ranked list of all 135 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 
 ## Repository map
