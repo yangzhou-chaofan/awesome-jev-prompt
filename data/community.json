@@ -2,8 +2,8 @@
  "stats": {
   "topPostLikes": 2278,
   "hnPoints": 1835,
-  "ghMatches": 860,
-  "curated": 152,
+  "ghMatches": 1195,
+  "curated": 163,
   "cookbooks": 16,
   "promptEntries": 42,
   "discordLinks": 714,
@@ -54,6 +54,17 @@
    "desc": "The browser-use team's ultrafast Jev integration — biggest community repo by stars.",
    "img": "https://opengraph.githubassets.com/1/browser-use/jev-ultrafast",
    "url": "https://github.com/browser-use/jev-ultrafast"
+  },
+  {
+   "name": "SemIf",
+   "owner": "TheoLeeCJ",
+   "stars": 1450,
+   "date": "2026-09-16",
+   "cat": "replicas",
+   "desc": "The openjev successor: semantic ifs from open models on a 3090, with a browser WebGPU demo. Formerly OpenJev; independent of TypeSafe.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/TheoLeeCJ/SemIf",
+   "url": "https://github.com/TheoLeeCJ/SemIf"
   },
   {
    "name": "fast-jev-compaction",
@@ -225,6 +236,17 @@
   },
   {
    "name": "awesome-jev",
+   "owner": "cobanov",
+   "stars": 63,
+   "date": "2026-09-18",
+   "cat": "awesome",
+   "desc": "Source-backed curated list with concrete usage, clear limitations and reproducible evidence; reviewed Sep 18.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/cobanov/awesome-jev",
+   "url": "https://github.com/cobanov/awesome-jev"
+  },
+  {
+   "name": "awesome-jev",
    "owner": "yibie",
    "stars": 59,
    "date": "2026-09-18",
@@ -351,6 +373,17 @@
    "url": "https://github.com/ChetasLua/jevmeter"
   },
   {
+   "name": "youtube-sponsor-detection",
+   "owner": "trungdq88",
+   "stars": 42,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Detect YouTube sponsor segments from live audio + transcript, powered by Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/trungdq88/youtube-sponsor-detection",
+   "url": "https://github.com/trungdq88/youtube-sponsor-detection"
+  },
+  {
    "name": "building-with-jev-skill",
    "owner": "dbreunig",
    "stars": 38,
@@ -360,6 +393,17 @@
    "src": "refresh",
    "img": "https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill",
    "url": "https://github.com/dbreunig/building-with-jev-skill"
+  },
+  {
+   "name": "awesome-jev",
+   "owner": "fatwang2",
+   "stars": 38,
+   "date": "2026-09-18",
+   "cat": "awesome",
+   "desc": "Jev project directory where submissions are reviewed by Jev itself (jev-review-action).",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/fatwang2/awesome-jev",
+   "url": "https://github.com/fatwang2/awesome-jev"
   },
   {
    "name": "skillranker",
@@ -394,6 +438,17 @@
    "url": "https://github.com/itsmostafa/typesafe-mcp"
   },
   {
+   "name": "jev-search",
+   "owner": "superagents-lab",
+   "stars": 34,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Web search with Jev: source selection, query understanding, relevance ranking.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/superagents-lab/jev-search",
+   "url": "https://github.com/superagents-lab/jev-search"
+  },
+  {
    "name": "awesome-jev",
    "owner": "AnotiaWang",
    "stars": 31,
@@ -413,6 +468,28 @@
    "src": "refresh",
    "img": "https://opengraph.githubassets.com/1/kshetrajna12/reflex",
    "url": "https://github.com/kshetrajna12/reflex"
+  },
+  {
+   "name": "jev-voice-browser",
+   "owner": "moritzkremb",
+   "stars": 31,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Control a real browser by voice — Jev decides intent + target in ~300ms.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/moritzkremb/jev-voice-browser",
+   "url": "https://github.com/moritzkremb/jev-voice-browser"
+  },
+  {
+   "name": "jev-browser-use",
+   "owner": "wy-coliney",
+   "stars": 31,
+   "date": "2026-09-18",
+   "cat": "agents",
+   "desc": "5–10x faster browser ops: Jev clicks, Codex thinks and verifies.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/wy-coliney/jev-browser-use",
+   "url": "https://github.com/wy-coliney/jev-browser-use"
   },
   {
    "name": "pi-jev",
@@ -446,6 +523,28 @@
    "url": "https://github.com/realZachi/typesafe-adblock"
   },
   {
+   "name": "awesome-jev",
+   "owner": "hellogumbo",
+   "stars": 28,
+   "date": "2026-09-17",
+   "cat": "awesome",
+   "desc": "Community directory with a searchable site (awesomejev.com) and daily star refreshes.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/hellogumbo/awesome-jev",
+   "url": "https://github.com/hellogumbo/awesome-jev"
+  },
+  {
+   "name": "jev-shell-history",
+   "owner": "mrnugget",
+   "stars": 26,
+   "date": "2026-09-18",
+   "cat": "devtools",
+   "desc": "Fish-style zsh history autosuggestions ranked by Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/mrnugget/jev-shell-history",
+   "url": "https://github.com/mrnugget/jev-shell-history"
+  },
+  {
    "name": "jev-browser",
    "owner": "jkudish",
    "stars": 25,
@@ -455,6 +554,28 @@
    "src": "refresh",
    "img": "https://opengraph.githubassets.com/1/jkudish/jev-browser",
    "url": "https://github.com/jkudish/jev-browser"
+  },
+  {
+   "name": "save-token-jev-clean",
+   "owner": "IAmUnbounded",
+   "stars": 25,
+   "date": "2026-09-18",
+   "cat": "devtools",
+   "desc": "Token-saving cleanup with Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/IAmUnbounded/save-token-jev-clean",
+   "url": "https://github.com/IAmUnbounded/save-token-jev-clean"
+  },
+  {
+   "name": "ask-jev-skill",
+   "owner": "shantanugoel",
+   "stars": 25,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Skill for Hermes and other agents to ask TypeSafe's Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/shantanugoel/ask-jev-skill",
+   "url": "https://github.com/shantanugoel/ask-jev-skill"
   },
   {
    "name": "commit-miner",
