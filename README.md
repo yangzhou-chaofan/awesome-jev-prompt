@@ -4,13 +4,13 @@
 
 > **The unofficial, community-maintained collection of prompts, states, and decision patterns for [Jev](https://typesafe.ai/) — TypeSafe AI's first System One Model.**
 >
-> Jev doesn't take "prompts" in the LLM sense. It takes a **state** and returns **typed decisions with calibrated probabilities** — Choice, Score, Noul. This repo collects the patterns that make those decisions good — plus the **Top 100 community builds**, ranked, with preview cards.
+> Jev doesn't take "prompts" in the LLM sense. It takes a **state** and returns **typed decisions with calibrated probabilities** — Choice, Score, Noul. This repo collects the patterns that make those decisions good — plus the **Top 30 community builds** (135 tracked), ranked, with preview cards.
 >
 > *Unofficial. Not affiliated with or endorsed by TypeSafe AI. "Jev" and "System One" are TypeSafe AI product names, used here descriptively.*
 
 [![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)
-[![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--17-fbbf24)](#sources)
-[![Showcase](https://img.shields.io/badge/showcase-119%20projects--top%20100%20ranked-blue)](#-top-100-jev-showcase)
+[![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--18-fbbf24)](#sources)
+[![Showcase](https://img.shields.io/badge/showcase-135%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
 [![Sources](https://img.shields.io/badge/sources-38%20verified-green)](SOURCES.md)
 [![Jev](https://img.shields.io/badge/model-Jev%201.13-blue)](https://docs.typesafe.ai/models)
 
@@ -52,9 +52,9 @@ state = {
 #            choice("Which team should handle this?", ["billing","technical","account"])
 ```
 
-## 🏆 Top 100 Jev Showcase
+## 🏆 Top 30 Jev Showcase
 
-**119 projects tracked, top 100 ranked by stars** — every card carries its own preview:
+**135 projects tracked, top 30 ranked by stars** — every card carries its own preview:
 
 | # | Project | ★ | What it does |
 |---|---|---|---|
@@ -69,14 +69,14 @@ state = {
 | 9 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | 40 | Local-first MCP plugin for continuous quality review |
 | 10 | [RomanSlack/jev-drone](https://github.com/RomanSlack/jev-drone) | 36 | Camera-only autonomous drone, Jev at 2.5Hz |
 
-➡️ **[Full ranked table with all 119 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)**
+➡️ **[Full ranked list of all 135 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)**
 
 ## Repository map
 
 ```
 awesome-jev-prompt/
 ├── README.md              ← you are here
-├── SOURCES.md             ← 38 sources with verification status & access methods
+├── SOURCES.md             ← 39 sources with verification status & access methods
 ├── data/
 │   ├── sources.json       ← machine-readable source registry
 │   ├── prompts.json       ← the 42-entry prompt/state/pattern collection
@@ -93,12 +93,12 @@ awesome-jev-prompt/
 
 | Cluster | Count | Best-of |
 |---|---|---|
-| 🤖 Agents & computer use | 40+ | typesafe-computer-use · jev-browser · blink |
-| 🛠️ Devtools, SDKs, MCP | 25+ | jev-router · typesafe-mcp · ruby_llm-typesafe |
+| 🤖 Agents & computer use | 45+ | typesafe-computer-use · jev-browser · blink |
+| 🛠️ Devtools, SDKs, MCP | 30+ | jev-router · typesafe-mcp · ruby_llm-typesafe |
 | 🎮 Games & physics AI | 12 | typesafe-mario · TerraBlind · things-vs-stuff |
 | 🛡️ Guardrails & safety | 8 | agent-control-plane (Dafny proofs) · second-thought · winnow |
 | 🔬 Replicas & benchmarks | 10 | jevlike · openjev · jev-on-a-laptop |
-| 💰 Trading & data | 3 | jev-trader · btc-jev-signal · advocaat |
+| 💰 Trading & data | 4 | jev-trader · btc-jev-signal · advocaat |
 
 ## The case study: the 90-second repo
 

@@ -53,6 +53,7 @@ verified through an alternative route (noted per entry).
 | 27 | HF Space: parallel-constrained-decoding | https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding | ✓ api | "Qwen-2.5-1B-RLCD" open alternative; 11 likes |
 | 28 | Ashby job board | https://jobs.ashbyhq.com/typesafe-ai | ✓ api | 4 roles (MTS Model Capabilities, MTS Backend/Platform, Dev Advocate, Member of Staff); $150k–250k + equity; stack: Python, TS/Next/Tailwind, K8s |
 | 28b | **Discord #show-and-tell full scrape (primary)** | `data/raw/discord-show-and-tell-2026-09-17.md` | ✓ first-hand (author-provided) | **714 links, full channel history Jul 22 → Sep 17**: 82 GitHub repos + ~60 X posts. Surfaced projects invisible to name-search (dspy-typesafeify 55★, blink, mosaik, agent-control-plane with Dafny proofs, skilldoom) and corrected 5 star counts. Upstream of `src:"discord"` entries |
+| 28c | **Discord #show-and-tell incremental batch (primary)** | `data/raw/discord-show-and-tell-2026-09-18.md` | ✓ first-hand (author-provided) | Sep 17 12:00 → Sep 18 08:00 CST: +27 repos, ~45 X posts. Big-league entries (gbrain 30k★, pydantic-ai-harness 898★, nika) verified as pre-Jev projects and excluded from the showcase; browser-use re-verified at 2,264★; 17 new Jev-integrated repos added |
 
 ## 3. Media & funding coverage
 
