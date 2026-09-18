@@ -8,7 +8,7 @@
 >
 > *Unofficial. Not affiliated with or endorsed by TypeSafe AI. "Jev" and "System One" are TypeSafe AI product names, used here descriptively.*
 
-[![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)
+[![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/app/jev-prompt)
 [![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--18-fbbf24)](#sources)
 [![Showcase](https://img.shields.io/badge/showcase-135%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
 [![Sources](https://img.shields.io/badge/sources-38%20verified-green)](SOURCES.md)
@@ -27,7 +27,7 @@ is scattered across launch posts, cookbooks, READMEs and X threads. This repo is
 - **Case studies** — the Mario state schema, the Doom loop, Wikiracing
 - **Community patterns** — what the first 72 hours built, with links
 
-Companion HTML gallery: **[Top 100 Jev Showcase & Jev Prompts](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)** (live on neta.art).
+Companion HTML gallery: **[Top 100 Jev Showcase & Jev Prompts](https://neta.art/app/jev-prompt)** (live on neta.art).
 
 ## The 60-second version
 
@@ -69,7 +69,7 @@ state = {
 | 9 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | 40 | Local-first MCP plugin for continuous quality review |
 | 10 | [RomanSlack/jev-drone](https://github.com/RomanSlack/jev-drone) | 36 | Camera-only autonomous drone, Jev at 2.5Hz |
 
-➡️ **[Full ranked list of all 135 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/w/d2ec5fc8-6057-42f4-91bd-650ea8f71aa2)**
+➡️ **[Full ranked list of all 135 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 
 ## Repository map
 
