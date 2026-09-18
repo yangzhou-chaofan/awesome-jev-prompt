@@ -2,8 +2,8 @@
  "stats": {
   "topPostLikes": 2278,
   "hnPoints": 1835,
-  "ghMatches": 729,
-  "curated": 135,
+  "ghMatches": 860,
+  "curated": 152,
   "cookbooks": 16,
   "promptEntries": 42,
   "discordLinks": 714,
@@ -48,7 +48,7 @@
   {
    "name": "jev-ultrafast",
    "owner": "browser-use",
-   "stars": 2264,
+   "stars": 3065,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "The browser-use team's ultrafast Jev integration — biggest community repo by stars.",
@@ -56,9 +56,20 @@
    "url": "https://github.com/browser-use/jev-ultrafast"
   },
   {
+   "name": "fast-jev-compaction",
+   "owner": "tamaratran",
+   "stars": 1388,
+   "date": "2026-09-18",
+   "cat": "research",
+   "desc": "Claude Code plugin that replaces compaction summaries with Jev decisions — the biggest new entrant since launch.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/tamaratran/fast-jev-compaction",
+   "url": "https://github.com/tamaratran/fast-jev-compaction"
+  },
+  {
    "name": "openjev",
    "owner": "TheoLeeCJ",
-   "stars": 825,
+   "stars": 1014,
    "date": "2026-09-16",
    "cat": "replicas",
    "desc": "\"Can we run something like Jev on a 3090 at home?\" — the open replica question everyone asked.",
@@ -68,7 +79,7 @@
   {
    "name": "jevlike",
    "owner": "vinnylarouge",
-   "stars": 681,
+   "stars": 742,
    "date": "2026-09-16",
    "cat": "replicas",
    "desc": "Independent reverse-engineering of the Jev shape: option-attention head scoring choices in one pass, with Doom and chess checkpoints.",
@@ -78,7 +89,7 @@
   {
    "name": "jev-trader",
    "owner": "jarrodwatts",
-   "stars": 522,
+   "stars": 614,
    "date": "2026-09-16",
    "cat": "finance",
    "desc": "One AI trade decision every Monad block. Jev on the Kuru MON-USDC pair.",
@@ -88,7 +99,7 @@
   {
    "name": "typesafe-mario",
    "owner": "fhshaik",
-   "stars": 217,
+   "stars": 238,
    "date": "2026-09-16",
    "cat": "games",
    "desc": "Jev plays Super Mario Bros. from structured emulator telemetry and RAM — no screenshots. Repo pushed 90s after the tweet.",
@@ -101,7 +112,7 @@
   {
    "name": "foreman",
    "owner": "thruwire",
-   "stars": 199,
+   "stars": 232,
    "date": "2026-09-17",
    "cat": "agents",
    "desc": "Software-factory foreman based on the TypeSafe Jev model.",
@@ -111,7 +122,7 @@
   {
    "name": "jev-review",
    "owner": "devagrawal09",
-   "stars": 172,
+   "stars": 191,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "A staged code-review workflow and local dashboard built with TypeSafe Jev.",
@@ -119,9 +130,20 @@
    "url": "https://github.com/devagrawal09/jev-review"
   },
   {
+   "name": "skillbox",
+   "owner": "kitze",
+   "stars": 119,
+   "date": "2026-09-18",
+   "cat": "devtools",
+   "desc": "Self-hosted, versioned skills library for AI agents. MCP, scoped clients.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/kitze/skillbox",
+   "url": "https://github.com/kitze/skillbox"
+  },
+  {
    "name": "jev-review",
    "owner": "NiazMorshed2007",
-   "stars": 82,
+   "stars": 92,
    "date": "2026-09-17",
    "cat": "agents",
    "desc": "Local-first MCP plugin for continuous software-quality review by AI coding agents, powered by Jev.",
@@ -129,19 +151,9 @@
    "url": "https://github.com/NiazMorshed2007/jev-review"
   },
   {
-   "name": "jev-router",
-   "owner": "gargpratyush",
-   "stars": 70,
-   "date": "2026-09-16",
-   "cat": "devtools",
-   "desc": "Route to the cheapest model in claude code for your task using jev-router",
-   "img": "https://opengraph.githubassets.com/1/gargpratyush/jev-router",
-   "url": "https://github.com/gargpratyush/jev-router"
-  },
-  {
    "name": "awesome-typesafe",
    "owner": "AbdelStark",
-   "stars": 66,
+   "stars": 88,
    "date": "2026-09-17",
    "cat": "awesome",
    "desc": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev.",
@@ -149,9 +161,30 @@
    "url": "https://github.com/AbdelStark/awesome-typesafe"
   },
   {
+   "name": "jev-router",
+   "owner": "gargpratyush",
+   "stars": 85,
+   "date": "2026-09-16",
+   "cat": "devtools",
+   "desc": "Route to the cheapest model in claude code for your task using jev-router",
+   "img": "https://opengraph.githubassets.com/1/gargpratyush/jev-router",
+   "url": "https://github.com/gargpratyush/jev-router"
+  },
+  {
+   "name": "openjev-sglang",
+   "owner": "ekzhang",
+   "stars": 79,
+   "date": "2026-09-18",
+   "cat": "replicas",
+   "desc": "Jev-compatible API endpoint based on open models (prefill-only).",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/ekzhang/openjev-sglang",
+   "url": "https://github.com/ekzhang/openjev-sglang"
+  },
+  {
    "name": "jev-eval-agent",
    "owner": "vinilana",
-   "stars": 62,
+   "stars": 74,
    "date": "2026-09-17",
    "cat": "research",
    "desc": "Agent-driven evaluation harness for Jev decision quality.",
@@ -159,9 +192,52 @@
    "url": "https://github.com/vinilana/jev-eval-agent"
   },
   {
+   "name": "pg-jev",
+   "owner": "realZachi",
+   "stars": 69,
+   "date": "2026-09-18",
+   "cat": "agents",
+   "desc": "Ask your Postgres tables questions in plain language — a PostgreSQL extension powered by Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/realZachi/pg-jev",
+   "url": "https://github.com/realZachi/pg-jev"
+  },
+  {
+   "name": "jev-browser",
+   "owner": "vlad-terin",
+   "stars": 67,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Jev-powered element selection for your agent’s existing computer-use tools",
+   "img": "https://opengraph.githubassets.com/1/vlad-terin/jev-browser",
+   "url": "https://github.com/vlad-terin/jev-browser"
+  },
+  {
+   "name": "jev-use",
+   "owner": "vlad-terin",
+   "stars": 67,
+   "date": "2026-09-18",
+   "cat": "agents",
+   "desc": "Jev-powered browser and desktop workflows with fewer Codex round trips.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/vlad-terin/jev-use",
+   "url": "https://github.com/vlad-terin/jev-use"
+  },
+  {
+   "name": "awesome-jev",
+   "owner": "yibie",
+   "stars": 59,
+   "date": "2026-09-18",
+   "cat": "awesome",
+   "desc": "Curated list of public projects, integrations and discussions built on Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/yibie/awesome-jev",
+   "url": "https://github.com/yibie/awesome-jev"
+  },
+  {
    "name": "dspy-typesafeify",
    "owner": "typesafeainate",
-   "stars": 57,
+   "stars": 58,
    "date": "2026-09-15",
    "cat": "devtools",
    "desc": "DSPy Signature decorator that routes structured predictions through TypeSafe automatically — the highest-starred find that name-based search missed.",
@@ -170,9 +246,19 @@
    "url": "https://github.com/typesafeainate/dspy-typesafeify"
   },
   {
+   "name": "mobile-jev",
+   "owner": "droidrun",
+   "stars": 57,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "droidrun's mobile Jev control.",
+   "img": "https://opengraph.githubassets.com/1/droidrun/mobile-jev",
+   "url": "https://github.com/droidrun/mobile-jev"
+  },
+  {
    "name": "jev-drone",
    "owner": "RomanSlack",
-   "stars": 53,
+   "stars": 55,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "Camera-only autonomous drone in MuJoCo with a small judgment model (TypeSafe Jev) in the loop at 2.5Hz",
@@ -182,7 +268,7 @@
   {
    "name": "jev-mcp",
    "owner": "jkudish",
-   "stars": 49,
+   "stars": 54,
    "date": "2026-09-17",
    "cat": "devtools",
    "desc": "Proof of concept MCP for Typesafe's new Jev AI model",
@@ -190,39 +276,20 @@
    "url": "https://github.com/jkudish/jev-mcp"
   },
   {
-   "name": "jev-browser",
-   "owner": "vlad-terin",
-   "stars": 48,
-   "date": "2026-09-17",
+   "name": "unclutter",
+   "owner": "kitze",
+   "stars": 54,
+   "date": "2026-09-18",
    "cat": "agents",
-   "desc": "Jev-powered element selection for your agent’s existing computer-use tools",
-   "img": "https://opengraph.githubassets.com/1/vlad-terin/jev-browser",
-   "url": "https://github.com/vlad-terin/jev-browser"
-  },
-  {
-   "name": "pi-warden",
-   "owner": "DevMortimer",
-   "stars": 44,
-   "date": "2026-09-16",
-   "cat": "devtools",
-   "desc": "Guardrails for Pi built on pi-typesafe that steer the agent instead of interrupting you: Jev judges irreversible and off-task tool calls, detects stuck loops, checks unverified done claims, flags slop",
-   "img": "https://opengraph.githubassets.com/1/DevMortimer/pi-warden",
-   "url": "https://github.com/DevMortimer/pi-warden"
-  },
-  {
-   "name": "mobile-jev",
-   "owner": "droidrun",
-   "stars": 44,
-   "date": "2026-09-17",
-   "cat": "agents",
-   "desc": "droidrun's mobile Jev control.",
-   "img": "https://opengraph.githubassets.com/1/droidrun/mobile-jev",
-   "url": "https://github.com/droidrun/mobile-jev"
+   "desc": "WXT browser extension: Jev-powered page-clutter removal with reusable templates.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/kitze/unclutter",
+   "url": "https://github.com/kitze/unclutter"
   },
   {
    "name": "advocaat",
    "owner": "pithings",
-   "stars": 42,
+   "stars": 52,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "A small, type-safe client for asking AI questions about your data, powered by TypeSafe Jev. ",
@@ -230,9 +297,127 @@
    "url": "https://github.com/pithings/advocaat"
   },
   {
+   "name": "jev-experiments",
+   "owner": "dabit3",
+   "stars": 52,
+   "date": "2026-09-18",
+   "cat": "research",
+   "desc": "Jev experiments.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/dabit3/jev-experiments",
+   "url": "https://github.com/dabit3/jev-experiments"
+  },
+  {
+   "name": "jev-visual",
+   "owner": "hr98w",
+   "stars": 50,
+   "date": "2026-09-18",
+   "cat": "replicas",
+   "desc": "Educational Jev-like visual inference experiment on Apple Silicon.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/hr98w/jev-visual",
+   "url": "https://github.com/hr98w/jev-visual"
+  },
+  {
+   "name": "pi-warden",
+   "owner": "DevMortimer",
+   "stars": 47,
+   "date": "2026-09-16",
+   "cat": "devtools",
+   "desc": "Guardrails for Pi built on pi-typesafe that steer the agent instead of interrupting you: Jev judges irreversible and off-task tool calls, detects stuck loops, checks unverified done claims, flags slop",
+   "img": "https://opengraph.githubassets.com/1/DevMortimer/pi-warden",
+   "url": "https://github.com/DevMortimer/pi-warden"
+  },
+  {
+   "name": "NanoJev",
+   "owner": "TianyuCodings",
+   "stars": 45,
+   "date": "2026-09-18",
+   "cat": "replicas",
+   "desc": "A nano replica of Jev: parallel decisions, dynamic candidates, end-to-end training.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/TianyuCodings/NanoJev",
+   "url": "https://github.com/TianyuCodings/NanoJev"
+  },
+  {
+   "name": "jevmeter",
+   "owner": "ChetasLua",
+   "stars": 42,
+   "date": "2026-09-18",
+   "cat": "agents",
+   "desc": "A live Jev meter on any video: every sentence scored, rendered as bars.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/ChetasLua/jevmeter",
+   "url": "https://github.com/ChetasLua/jevmeter"
+  },
+  {
+   "name": "building-with-jev-skill",
+   "owner": "dbreunig",
+   "stars": 38,
+   "date": "2026-09-18",
+   "cat": "devtools",
+   "desc": "A skill for writing and improving programs that call Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill",
+   "url": "https://github.com/dbreunig/building-with-jev-skill"
+  },
+  {
+   "name": "skillranker",
+   "owner": "Dicklesworthstone",
+   "stars": 35,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Rust CLI powered by Jev from TypeSafe.ai that ranks agent skills for the next step using live session context. Includes Claude Code hooks, structured JSON, abstention, and local feedback. Requires a TypeSafe API key.",
+   "img": "https://opengraph.githubassets.com/1/Dicklesworthstone/skillranker",
+   "url": "https://github.com/Dicklesworthstone/skillranker"
+  },
+  {
+   "name": "jevpilot",
+   "owner": "standardagents",
+   "stars": 35,
+   "date": "2026-09-18",
+   "cat": "games",
+   "desc": "A playable Three.js driving simulator with Jev-powered autopilot.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/standardagents/jevpilot",
+   "url": "https://github.com/standardagents/jevpilot"
+  },
+  {
+   "name": "typesafe-mcp",
+   "owner": "itsmostafa",
+   "stars": 35,
+   "date": "2026-09-18",
+   "cat": "devtools",
+   "desc": "MCP connector giving your AI agent direct access to TypeSafe's Jev.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/itsmostafa/typesafe-mcp",
+   "url": "https://github.com/itsmostafa/typesafe-mcp"
+  },
+  {
+   "name": "awesome-jev",
+   "owner": "AnotiaWang",
+   "stars": 31,
+   "date": "2026-09-17",
+   "cat": "awesome",
+   "desc": "A curated list of awesome Jev / TypeSafe System One applications, libraries, and resources.",
+   "img": "https://opengraph.githubassets.com/1/AnotiaWang/awesome-jev",
+   "url": "https://github.com/AnotiaWang/awesome-jev"
+  },
+  {
+   "name": "reflex",
+   "owner": "kshetrajna12",
+   "stars": 31,
+   "date": "2026-09-18",
+   "cat": "replicas",
+   "desc": "A small open decision model: state + typed questions → calibrated probabilities.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/kshetrajna12/reflex",
+   "url": "https://github.com/kshetrajna12/reflex"
+  },
+  {
    "name": "pi-jev",
    "owner": "y0usaf",
-   "stars": 26,
+   "stars": 29,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "TypeSafe Jev as a decision layer for the Pi coding agent: a measured tool-call gate plus jev_ask for typed, calibrated answers",
@@ -242,7 +427,7 @@
   {
    "name": "typesafe-ai-benchmark",
    "owner": "iammrduncan",
-   "stars": 25,
+   "stars": 29,
    "date": "2026-09-16",
    "cat": "research",
    "desc": "This is a LLM Gateway that mimics typesafe ai structured output. Like an imposter Jev.",
@@ -250,14 +435,26 @@
    "url": "https://github.com/iammrduncan/typesafe-ai-benchmark"
   },
   {
-   "name": "skillranker",
-   "owner": "Dicklesworthstone",
-   "stars": 22,
-   "date": "2026-09-17",
+   "name": "typesafe-adblock",
+   "owner": "realZachi",
+   "stars": 28,
+   "date": "2026-09-18",
    "cat": "agents",
-   "desc": "Rust CLI powered by Jev from TypeSafe.ai that ranks agent skills for the next step using live session context. Includes Claude Code hooks, structured JSON, abstention, and local feedback. Requires a TypeSafe API key.",
-   "img": "https://opengraph.githubassets.com/1/Dicklesworthstone/skillranker",
-   "url": "https://github.com/Dicklesworthstone/skillranker"
+   "desc": "Chrome extension that asks a tiny Jev decision model about page elements.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/realZachi/typesafe-adblock",
+   "url": "https://github.com/realZachi/typesafe-adblock"
+  },
+  {
+   "name": "jev-browser",
+   "owner": "jkudish",
+   "stars": 25,
+   "date": "2026-09-18",
+   "cat": "agents",
+   "desc": "Browser use using TypeSafe's Jev model.",
+   "src": "refresh",
+   "img": "https://opengraph.githubassets.com/1/jkudish/jev-browser",
+   "url": "https://github.com/jkudish/jev-browser"
   },
   {
    "name": "commit-miner",
@@ -270,6 +467,46 @@
    "url": "https://github.com/devanshbatham/commit-miner"
   },
   {
+   "name": "open-jev",
+   "owner": "daseinlabs",
+   "stars": 18,
+   "date": "2026-09-17",
+   "cat": "replicas",
+   "desc": "Replica / study.",
+   "img": "https://opengraph.githubassets.com/1/daseinlabs/open-jev",
+   "url": "https://github.com/daseinlabs/open-jev"
+  },
+  {
+   "name": "Jev-Moderation-Bot",
+   "owner": "brainstormity",
+   "stars": 16,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Jev-powered moderation bot.",
+   "img": "https://opengraph.githubassets.com/1/brainstormity/Jev-Moderation-Bot",
+   "url": "https://github.com/brainstormity/Jev-Moderation-Bot"
+  },
+  {
+   "name": "typesafe-snake",
+   "owner": "sorrycc",
+   "stars": 15,
+   "date": "2026-09-17",
+   "cat": "games",
+   "desc": "Snake auto-played by TypeSafe's Jev model: one System One choice per tick, legal moves and facts generated in code",
+   "img": "https://opengraph.githubassets.com/1/sorrycc/typesafe-snake",
+   "url": "https://github.com/sorrycc/typesafe-snake"
+  },
+  {
+   "name": "jev-codex-router",
+   "owner": "0xNatoshi",
+   "stars": 14,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Per-turn model & reasoning routing for Codex, driven by Jev (TypeSafe System One): picks the model, thinking depth and speed mode for every turn.",
+   "img": "https://opengraph.githubassets.com/1/0xNatoshi/jev-codex-router",
+   "url": "https://github.com/0xNatoshi/jev-codex-router"
+  },
+  {
    "name": "blink",
    "owner": "ellipsis-dev",
    "stars": 13,
@@ -280,24 +517,24 @@
    "url": "https://github.com/ellipsis-dev/blink"
   },
   {
-   "name": "awesome-jev",
-   "owner": "AnotiaWang",
-   "stars": 13,
-   "date": "2026-09-17",
-   "cat": "awesome",
-   "desc": "A curated list of awesome Jev / TypeSafe System One applications, libraries, and resources.",
-   "img": "https://opengraph.githubassets.com/1/AnotiaWang/awesome-jev",
-   "url": "https://github.com/AnotiaWang/awesome-jev"
-  },
-  {
    "name": "jev-on-a-laptop",
    "owner": "rorshopping",
-   "stars": 12,
+   "stars": 13,
    "date": "2026-09-16",
    "cat": "replicas",
    "desc": "Unofficial study: Jev-style parallel typed decisions on stock 1.5B-8B models on an Apple Silicon laptop. Benchmarks, research notes, and a Hugging Face Space demo.",
    "img": "https://opengraph.githubassets.com/1/rorshopping/jev-on-a-laptop",
    "url": "https://github.com/rorshopping/jev-on-a-laptop"
+  },
+  {
+   "name": "open-jev",
+   "owner": "JoshuaSP",
+   "stars": 12,
+   "date": "2026-09-16",
+   "cat": "replicas",
+   "desc": "Typed JSON inference with DiffusionGemma, with Every and Jev benchmark results",
+   "img": "https://opengraph.githubassets.com/1/JoshuaSP/open-jev",
+   "url": "https://github.com/JoshuaSP/open-jev"
   },
   {
    "name": "mosaik",
@@ -311,26 +548,6 @@
    "url": "https://github.com/luantak/mosaik"
   },
   {
-   "name": "Jev-Moderation-Bot",
-   "owner": "brainstormity",
-   "stars": 11,
-   "date": "2026-09-17",
-   "cat": "agents",
-   "desc": "Jev-powered moderation bot.",
-   "img": "https://opengraph.githubassets.com/1/brainstormity/Jev-Moderation-Bot",
-   "url": "https://github.com/brainstormity/Jev-Moderation-Bot"
-  },
-  {
-   "name": "open-jev",
-   "owner": "JoshuaSP",
-   "stars": 10,
-   "date": "2026-09-16",
-   "cat": "replicas",
-   "desc": "Typed JSON inference with DiffusionGemma, with Every and Jev benchmark results",
-   "img": "https://opengraph.githubassets.com/1/JoshuaSP/open-jev",
-   "url": "https://github.com/JoshuaSP/open-jev"
-  },
-  {
    "name": "jevbetter",
    "owner": "olanotolu",
    "stars": 10,
@@ -339,6 +556,16 @@
    "desc": "A stronger one-pass scorer over a variable list of text options. Hashed n-gram encoder, rival-aware attention, gated head, temperature scaling — with a head-to-head benchmark vs the jevlike starter design.",
    "img": "https://opengraph.githubassets.com/1/olanotolu/jevbetter",
    "url": "https://github.com/olanotolu/jevbetter"
+  },
+  {
+   "name": "mario-jev",
+   "owner": "shantanugoel",
+   "stars": 10,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Community build (4★ at snapshot).",
+   "img": "https://opengraph.githubassets.com/1/shantanugoel/mario-jev",
+   "url": "https://github.com/shantanugoel/mario-jev"
   },
   {
    "name": "jev-me",
@@ -351,44 +578,34 @@
    "url": "https://github.com/jon-devlapaz/jev-me"
   },
   {
-   "name": "open-jev",
-   "owner": "daseinlabs",
+   "name": "tsai-sc",
+   "owner": "phyous",
    "stars": 9,
-   "date": "2026-09-17",
-   "cat": "replicas",
-   "desc": "Replica / study.",
-   "img": "https://opengraph.githubassets.com/1/daseinlabs/open-jev",
-   "url": "https://github.com/daseinlabs/open-jev"
-  },
-  {
-   "name": "mario-jev",
-   "owner": "shantanugoel",
-   "stars": 9,
-   "date": "2026-09-17",
+   "date": "2026-09-16",
    "cat": "agents",
-   "desc": "Community build (4★ at snapshot).",
-   "img": "https://opengraph.githubassets.com/1/shantanugoel/mario-jev",
-   "url": "https://github.com/shantanugoel/mario-jev"
+   "desc": "Jev controls original StarCraft shareware through keyboard and mouse — completed the Strongarm mission with a verified victory screen (attempt 16).",
+   "img": "https://opengraph.githubassets.com/1/phyous/tsai-sc",
+   "url": "https://github.com/phyous/tsai-sc"
   },
   {
-   "name": "jev-codex-router",
-   "owner": "0xNatoshi",
-   "stars": 9,
-   "date": "2026-09-17",
-   "cat": "devtools",
-   "desc": "Per-turn model & reasoning routing for Codex, driven by Jev (TypeSafe System One): picks the model, thinking depth and speed mode for every turn.",
-   "img": "https://opengraph.githubassets.com/1/0xNatoshi/jev-codex-router",
-   "url": "https://github.com/0xNatoshi/jev-codex-router"
-  },
-  {
-   "name": "typesafe-snake",
-   "owner": "sorrycc",
+   "name": "winnow",
+   "owner": "GhalebDweikat",
    "stars": 8,
-   "date": "2026-09-17",
-   "cat": "games",
-   "desc": "Snake auto-played by TypeSafe's Jev model: one System One choice per tick, legal moves and facts generated in code",
-   "img": "https://opengraph.githubassets.com/1/sorrycc/typesafe-snake",
-   "url": "https://github.com/sorrycc/typesafe-snake"
+   "date": "2026-09-16",
+   "cat": "agents",
+   "desc": "A calibrated context sieve for Claude Code: every tool result is judged by a System One model before it enters context.",
+   "img": "https://opengraph.githubassets.com/1/GhalebDweikat/winnow",
+   "url": "https://github.com/GhalebDweikat/winnow"
+  },
+  {
+   "name": "neo4jev",
+   "owner": "jexp",
+   "stars": 8,
+   "date": "2026-09-16",
+   "cat": "agents",
+   "desc": "Typesafe.ai System One Model Jev navigating a Neo4j graph by using a classifier over neighbouring relationships",
+   "img": "https://opengraph.githubassets.com/1/jexp/neo4jev",
+   "url": "https://github.com/jexp/neo4jev"
   },
   {
    "name": "agent-control-plane",
@@ -402,6 +619,37 @@
    "url": "https://github.com/yacine-kellib/agent-control-plane"
   },
   {
+   "name": "jev-axi",
+   "owner": "shiftynick",
+   "stars": 7,
+   "date": "2026-09-16",
+   "cat": "agents",
+   "desc": "Agent-ergonomic CLI for TypeSafe's Jev: fast calibrated judgments (pick, rate, check, rank, triage, guard) from the shell",
+   "img": "https://opengraph.githubassets.com/1/shiftynick/jev-axi",
+   "url": "https://github.com/shiftynick/jev-axi"
+  },
+  {
+   "name": "typesafe-ai",
+   "owner": "Twister915",
+   "stars": 7,
+   "date": "2026-09-16",
+   "cat": "devtools",
+   "desc": "Rust client for the TypeSafe API (async + blocking).",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/Twister915/typesafe-ai",
+   "url": "https://github.com/Twister915/typesafe-ai"
+  },
+  {
+   "name": "pi-jev-auto-mode",
+   "owner": "jomatsu",
+   "stars": 7,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "Jev (TypeSafe System One) backed auto mode for the Pi coding agent: semantically auto-approves bash, write, and edit tool calls and fails closed when a decision cannot be made.",
+   "img": "https://opengraph.githubassets.com/1/jomatsu/pi-jev-auto-mode",
+   "url": "https://github.com/jomatsu/pi-jev-auto-mode"
+  },
+  {
    "name": "TerraBlind",
    "owner": "Reisenbug",
    "stars": 6,
@@ -411,16 +659,6 @@
    "src": "discord",
    "img": "https://opengraph.githubassets.com/1/Reisenbug/TerraBlind",
    "url": "https://github.com/Reisenbug/TerraBlind"
-  },
-  {
-   "name": "tsai-sc",
-   "owner": "phyous",
-   "stars": 9,
-   "date": "2026-09-16",
-   "cat": "agents",
-   "desc": "Jev controls original StarCraft shareware through keyboard and mouse — completed the Strongarm mission with a verified victory screen (attempt 16).",
-   "img": "https://opengraph.githubassets.com/1/phyous/tsai-sc",
-   "url": "https://github.com/phyous/tsai-sc"
   },
   {
    "name": "ai-elo-ranker",
@@ -443,27 +681,6 @@
    "url": "https://github.com/AbdelStark/jev-benchmarks"
   },
   {
-   "name": "jev-axi",
-   "owner": "shiftynick",
-   "stars": 6,
-   "date": "2026-09-16",
-   "cat": "agents",
-   "desc": "Agent-ergonomic CLI for TypeSafe's Jev: fast calibrated judgments (pick, rate, check, rank, triage, guard) from the shell",
-   "img": "https://opengraph.githubassets.com/1/shiftynick/jev-axi",
-   "url": "https://github.com/shiftynick/jev-axi"
-  },
-  {
-   "name": "typesafe-ai",
-   "owner": "Twister915",
-   "stars": 6,
-   "date": "2026-09-16",
-   "cat": "devtools",
-   "desc": "Rust client for the TypeSafe API (async + blocking).",
-   "src": "discord",
-   "img": "https://opengraph.githubassets.com/1/Twister915/typesafe-ai",
-   "url": "https://github.com/Twister915/typesafe-ai"
-  },
-  {
    "name": "HA-Jev",
    "owner": "AboveColin",
    "stars": 6,
@@ -474,29 +691,9 @@
    "url": "https://github.com/AboveColin/HA-Jev"
   },
   {
-   "name": "winnow",
-   "owner": "GhalebDweikat",
-   "stars": 6,
-   "date": "2026-09-16",
-   "cat": "agents",
-   "desc": "A calibrated context sieve for Claude Code: every tool result is judged by a System One model before it enters context.",
-   "img": "https://opengraph.githubassets.com/1/GhalebDweikat/winnow",
-   "url": "https://github.com/GhalebDweikat/winnow"
-  },
-  {
-   "name": "neo4jev",
-   "owner": "jexp",
-   "stars": 6,
-   "date": "2026-09-16",
-   "cat": "agents",
-   "desc": "Typesafe.ai System One Model Jev navigating a Neo4j graph by using a classifier over neighbouring relationships",
-   "img": "https://opengraph.githubassets.com/1/jexp/neo4jev",
-   "url": "https://github.com/jexp/neo4jev"
-  },
-  {
    "name": "jev-browser",
    "owner": "Ying-Kai-Liao",
-   "stars": 5,
+   "stars": 6,
    "date": "2026-09-16",
    "cat": "agents",
    "desc": "Browser automation where an LLM plans and Jev (Typesafe System One) decides. Library, CLI and MCP server.",
@@ -506,7 +703,7 @@
   {
    "name": "jev-mcp",
    "owner": "blakestone-x",
-   "stars": 5,
+   "stars": 6,
    "date": "2026-09-16",
    "cat": "devtools",
    "desc": "MCP server for TypeSafe Jev: typed classify, score, check, match and screen for any agent, with confidence on every answer",
@@ -532,6 +729,27 @@
    "desc": "Open-source Jev log triage for OpenTelemetry. Score the signal before expensive LLM analysis.",
    "img": "https://opengraph.githubassets.com/1/reachjalil/jevlogs",
    "url": "https://github.com/reachjalil/jevlogs"
+  },
+  {
+   "name": "pi-jev-router",
+   "owner": "mejiasd3v",
+   "stars": 5,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Automatic model routing for Pi using TypeSafe's Jev through Vercel AI Gateway",
+   "img": "https://opengraph.githubassets.com/1/mejiasd3v/pi-jev-router",
+   "url": "https://github.com/mejiasd3v/pi-jev-router"
+  },
+  {
+   "name": "nouls",
+   "owner": "benomahony",
+   "stars": 5,
+   "date": "2026-09-17",
+   "cat": "devtools",
+   "desc": "Noul-flavored utilities.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/benomahony/nouls",
+   "url": "https://github.com/benomahony/nouls"
   },
   {
    "name": "jev-lm",
@@ -617,16 +835,6 @@
    "url": "https://github.com/GiesN/typesafe-jev-workflow"
   },
   {
-   "name": "pi-jev-auto-mode",
-   "owner": "jomatsu",
-   "stars": 4,
-   "date": "2026-09-17",
-   "cat": "agents",
-   "desc": "Jev (TypeSafe System One) backed auto mode for the Pi coding agent: semantically auto-approves bash, write, and edit tool calls and fails closed when a decision cannot be made.",
-   "img": "https://opengraph.githubassets.com/1/jomatsu/pi-jev-auto-mode",
-   "url": "https://github.com/jomatsu/pi-jev-auto-mode"
-  },
-  {
    "name": "semdecide",
    "owner": "sharziki",
    "stars": 4,
@@ -635,27 +843,6 @@
    "desc": "Typed semantic decisions for Unix pipelines and CI, powered by TypeSafe AI Jev.",
    "img": "https://opengraph.githubassets.com/1/sharziki/semdecide",
    "url": "https://github.com/sharziki/semdecide"
-  },
-  {
-   "name": "pi-jev-router",
-   "owner": "mejiasd3v",
-   "stars": 4,
-   "date": "2026-09-17",
-   "cat": "devtools",
-   "desc": "Automatic model routing for Pi using TypeSafe's Jev through Vercel AI Gateway",
-   "img": "https://opengraph.githubassets.com/1/mejiasd3v/pi-jev-router",
-   "url": "https://github.com/mejiasd3v/pi-jev-router"
-  },
-  {
-   "name": "nouls",
-   "owner": "benomahony",
-   "stars": 4,
-   "date": "2026-09-17",
-   "cat": "devtools",
-   "desc": "Noul-flavored utilities.",
-   "src": "discord",
-   "img": "https://opengraph.githubassets.com/1/benomahony/nouls",
-   "url": "https://github.com/benomahony/nouls"
   },
   {
    "name": "jevfire",
@@ -784,12 +971,22 @@
   {
    "name": "jev-browser",
    "owner": "vinilana",
-   "stars": 2,
+   "stars": 3,
    "date": "2026-09-17",
    "cat": "agents",
    "desc": "Community build (1★ at snapshot).",
    "img": "https://opengraph.githubassets.com/1/vinilana/jev-browser",
    "url": "https://github.com/vinilana/jev-browser"
+  },
+  {
+   "name": "OneVOneJev",
+   "owner": "emrickgarrett",
+   "stars": 3,
+   "date": "2026-09-17",
+   "cat": "games",
+   "desc": "1v1 Jev quickscope arena — Three.js + TypeSafe System One",
+   "img": "https://opengraph.githubassets.com/1/emrickgarrett/OneVOneJev",
+   "url": "https://github.com/emrickgarrett/OneVOneJev"
   },
   {
    "name": "jev_stock",
@@ -885,16 +1082,6 @@
    "url": "https://github.com/wondertwins/jev-benchmark"
   },
   {
-   "name": "OneVOneJev",
-   "owner": "emrickgarrett",
-   "stars": 2,
-   "date": "2026-09-17",
-   "cat": "games",
-   "desc": "1v1 Jev quickscope arena — Three.js + TypeSafe System One",
-   "img": "https://opengraph.githubassets.com/1/emrickgarrett/OneVOneJev",
-   "url": "https://github.com/emrickgarrett/OneVOneJev"
-  },
-  {
    "name": "diffjury",
    "owner": "raihankhan-rk",
    "stars": 2,
@@ -956,6 +1143,16 @@
    "src": "discord",
    "img": "https://opengraph.githubassets.com/1/serene-interactive/Seagreen",
    "url": "https://github.com/serene-interactive/Seagreen"
+  },
+  {
+   "name": "jevibe-check",
+   "owner": "sriganesh",
+   "stars": 2,
+   "date": "2026-09-17",
+   "cat": "agents",
+   "desc": "A live tone labeler for Bluesky posts and drafts, using TypeSafe's Jev API.",
+   "img": "https://opengraph.githubassets.com/1/sriganesh/jevibe-check",
+   "url": "https://github.com/sriganesh/jevibe-check"
   },
   {
    "name": "axiom-agent-runtime",
@@ -1076,16 +1273,6 @@
    "desc": "Blind security benchmarks for Jev, TypeSafe's System One model: prompt injection and vulnerable code detection, built on jev-go",
    "img": "https://opengraph.githubassets.com/1/Gaurav-Gosain/jev-sec-bench",
    "url": "https://github.com/Gaurav-Gosain/jev-sec-bench"
-  },
-  {
-   "name": "jevibe-check",
-   "owner": "sriganesh",
-   "stars": 1,
-   "date": "2026-09-17",
-   "cat": "agents",
-   "desc": "A live tone labeler for Bluesky posts and drafts, using TypeSafe's Jev API.",
-   "img": "https://opengraph.githubassets.com/1/sriganesh/jevibe-check",
-   "url": "https://github.com/sriganesh/jevibe-check"
   },
   {
    "name": "commentcop",
@@ -1347,6 +1534,17 @@
    "url": "https://github.com/AmoghCreator/doom-jev"
   },
   {
+   "name": "btc-jev-signal",
+   "owner": "WebGrga",
+   "stars": 1,
+   "date": "2026-09-17",
+   "cat": "finance",
+   "desc": "BTC multi-timeframe signals from Jev probabilities + Binance data.",
+   "src": "discord",
+   "img": "https://opengraph.githubassets.com/1/WebGrga/btc-jev-signal",
+   "url": "https://github.com/WebGrga/btc-jev-signal"
+  },
+  {
    "name": "jev-mobile",
    "owner": "Friedjof",
    "stars": 0,
@@ -1378,17 +1576,6 @@
    "src": "discord",
    "img": "https://opengraph.githubassets.com/1/robault/skilldoom",
    "url": "https://github.com/robault/skilldoom"
-  },
-  {
-   "name": "btc-jev-signal",
-   "owner": "WebGrga",
-   "stars": 0,
-   "date": "2026-09-17",
-   "cat": "finance",
-   "desc": "BTC multi-timeframe signals from Jev probabilities + Binance data.",
-   "src": "discord",
-   "img": "https://opengraph.githubassets.com/1/WebGrga/btc-jev-signal",
-   "url": "https://github.com/WebGrga/btc-jev-signal"
   },
   {
    "name": "wellposed",
