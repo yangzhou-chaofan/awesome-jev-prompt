@@ -299,8 +299,8 @@
   "stats": {
    "topPostLikes": 2278,
    "hnPoints": 1835,
-   "ghMatches": 1195,
-   "curated": 163,
+   "ghMatches": 1976,
+   "curated": 176,
    "cookbooks": 16,
    "promptEntries": 42,
    "discordLinks": 714,
@@ -345,7 +345,7 @@
    {
     "name": "jev-ultrafast",
     "owner": "browser-use",
-    "stars": 3065,
+    "stars": 6423,
     "date": "2026-09-16",
     "cat": "agents",
     "desc": "The browser-use team's ultrafast Jev integration — biggest community repo by stars.",
@@ -353,20 +353,9 @@
     "url": "https://github.com/browser-use/jev-ultrafast"
    },
    {
-    "name": "SemIf",
-    "owner": "TheoLeeCJ",
-    "stars": 1450,
-    "date": "2026-09-16",
-    "cat": "replicas",
-    "desc": "The openjev successor: semantic ifs from open models on a 3090, with a browser WebGPU demo. Formerly OpenJev; independent of TypeSafe.",
-    "src": "refresh",
-    "img": "https://opengraph.githubassets.com/1/TheoLeeCJ/SemIf",
-    "url": "https://github.com/TheoLeeCJ/SemIf"
-   },
-   {
     "name": "fast-jev-compaction",
     "owner": "tamaratran",
-    "stars": 1388,
+    "stars": 3683,
     "date": "2026-09-18",
     "cat": "research",
     "desc": "Claude Code plugin that replaces compaction summaries with Jev decisions — the biggest new entrant since launch.",
@@ -375,29 +364,20 @@
     "url": "https://github.com/tamaratran/fast-jev-compaction"
    },
    {
-    "name": "openjev",
+    "name": "SemIf",
     "owner": "TheoLeeCJ",
-    "stars": 1014,
+    "stars": 1709,
     "date": "2026-09-16",
     "cat": "replicas",
-    "desc": "\"Can we run something like Jev on a 3090 at home?\" — the open replica question everyone asked.",
-    "img": "https://opengraph.githubassets.com/1/TheoLeeCJ/openjev",
-    "url": "https://github.com/TheoLeeCJ/openjev"
-   },
-   {
-    "name": "jevlike",
-    "owner": "vinnylarouge",
-    "stars": 742,
-    "date": "2026-09-16",
-    "cat": "replicas",
-    "desc": "Independent reverse-engineering of the Jev shape: option-attention head scoring choices in one pass, with Doom and chess checkpoints.",
-    "img": "https://opengraph.githubassets.com/1/vinnylarouge/jevlike",
-    "url": "https://github.com/vinnylarouge/jevlike"
+    "desc": "The openjev successor: semantic ifs from open models on a 3090, with a browser WebGPU demo. Formerly OpenJev; independent of TypeSafe.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/TheoLeeCJ/SemIf",
+    "url": "https://github.com/TheoLeeCJ/SemIf"
    },
    {
     "name": "jev-trader",
     "owner": "jarrodwatts",
-    "stars": 614,
+    "stars": 984,
     "date": "2026-09-16",
     "cat": "finance",
     "desc": "One AI trade decision every Monad block. Jev on the Kuru MON-USDC pair.",
@@ -405,9 +385,60 @@
     "url": "https://github.com/jarrodwatts/jev-trader"
    },
    {
+    "name": "jevlike",
+    "owner": "vinnylarouge",
+    "stars": 926,
+    "date": "2026-09-16",
+    "cat": "replicas",
+    "desc": "Independent reverse-engineering of the Jev shape: option-attention head scoring choices in one pass, with Doom and chess checkpoints.",
+    "img": "https://opengraph.githubassets.com/1/vinnylarouge/jevlike",
+    "url": "https://github.com/vinnylarouge/jevlike"
+   },
+   {
+    "name": "foreman",
+    "owner": "thruwire",
+    "stars": 322,
+    "date": "2026-09-17",
+    "cat": "agents",
+    "desc": "Software-factory foreman based on the TypeSafe Jev model.",
+    "img": "https://opengraph.githubassets.com/1/thruwire/foreman",
+    "url": "https://github.com/thruwire/foreman"
+   },
+   {
+    "name": "jev-review",
+    "owner": "devagrawal09",
+    "stars": 296,
+    "date": "2026-09-16",
+    "cat": "agents",
+    "desc": "A staged code-review workflow and local dashboard built with TypeSafe Jev.",
+    "img": "https://opengraph.githubassets.com/1/devagrawal09/jev-review",
+    "url": "https://github.com/devagrawal09/jev-review"
+   },
+   {
+    "name": "awesome-typesafe",
+    "owner": "AbdelStark",
+    "stars": 276,
+    "date": "2026-09-17",
+    "cat": "awesome",
+    "desc": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev.",
+    "img": "https://opengraph.githubassets.com/1/AbdelStark/awesome-typesafe",
+    "url": "https://github.com/AbdelStark/awesome-typesafe"
+   },
+   {
+    "name": "kev",
+    "owner": "jaredpalmer",
+    "stars": 273,
+    "date": "2026-09-17",
+    "cat": "replicas",
+    "desc": "Jev-inspired decision model from Jared Palmer (co-creator of tRPC/Refine): typed questions → calibrated probabilities in one pass. Trainable Qwen2.5-0.5B, weights released, runs on a MacBook.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/jaredpalmer/kev",
+    "url": "https://github.com/jaredpalmer/kev"
+   },
+   {
     "name": "typesafe-mario",
     "owner": "fhshaik",
-    "stars": 238,
+    "stars": 270,
     "date": "2026-09-16",
     "cat": "games",
     "desc": "Jev plays Super Mario Bros. from structured emulator telemetry and RAM — no screenshots. Repo pushed 90s after the tweet.",
@@ -418,60 +449,42 @@
     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100085174826647552/img/6YMRQKKZYBPsW2oo.jpg"
    },
    {
-    "name": "foreman",
-    "owner": "thruwire",
-    "stars": 232,
-    "date": "2026-09-17",
-    "cat": "agents",
-    "desc": "Software-factory foreman based on the TypeSafe Jev model.",
-    "img": "https://opengraph.githubassets.com/1/thruwire/foreman",
-    "url": "https://github.com/thruwire/foreman"
-   },
-   {
-    "name": "jev-review",
-    "owner": "devagrawal09",
-    "stars": 191,
-    "date": "2026-09-16",
-    "cat": "agents",
-    "desc": "A staged code-review workflow and local dashboard built with TypeSafe Jev.",
-    "img": "https://opengraph.githubassets.com/1/devagrawal09/jev-review",
-    "url": "https://github.com/devagrawal09/jev-review"
-   },
-   {
-    "name": "skillbox",
-    "owner": "kitze",
-    "stars": 119,
+    "name": "awesome-jev",
+    "owner": "yibie",
+    "stars": 250,
     "date": "2026-09-18",
-    "cat": "devtools",
-    "desc": "Self-hosted, versioned skills library for AI agents. MCP, scoped clients.",
-    "src": "refresh",
-    "img": "https://opengraph.githubassets.com/1/kitze/skillbox",
-    "url": "https://github.com/kitze/skillbox"
-   },
-   {
-    "name": "jev-review",
-    "owner": "NiazMorshed2007",
-    "stars": 92,
-    "date": "2026-09-17",
-    "cat": "agents",
-    "desc": "Local-first MCP plugin for continuous software-quality review by AI coding agents, powered by Jev.",
-    "img": "https://opengraph.githubassets.com/1/NiazMorshed2007/jev-review",
-    "url": "https://github.com/NiazMorshed2007/jev-review"
-   },
-   {
-    "name": "awesome-typesafe",
-    "owner": "AbdelStark",
-    "stars": 88,
-    "date": "2026-09-17",
     "cat": "awesome",
-    "desc": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev.",
-    "img": "https://opengraph.githubassets.com/1/AbdelStark/awesome-typesafe",
-    "url": "https://github.com/AbdelStark/awesome-typesafe"
+    "desc": "Curated list of public projects, integrations and discussions built on Jev.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/yibie/awesome-jev",
+    "url": "https://github.com/yibie/awesome-jev"
+   },
+   {
+    "name": "tax-doc-classifier",
+    "owner": "kyotofin",
+    "stars": 191,
+    "date": "2026-09-18",
+    "cat": "agents",
+    "desc": "Tax document page classifier built on Jev decisions — 100% strict accuracy across 261 IRS form types.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/kyotofin/tax-doc-classifier",
+    "url": "https://github.com/kyotofin/tax-doc-classifier"
+   },
+   {
+    "name": "pg-jev",
+    "owner": "realZachi",
+    "stars": 187,
+    "date": "2026-09-18",
+    "cat": "agents",
+    "desc": "Ask your Postgres tables questions in plain language — a PostgreSQL extension powered by Jev.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/realZachi/pg-jev",
+    "url": "https://github.com/realZachi/pg-jev"
    },
    {
     "name": "jev-router",
     "owner": "gargpratyush",
-    "stars": 85,
+    "stars": 168,
     "date": "2026-09-16",
     "cat": "devtools",
     "desc": "Route to the cheapest model in claude code for your task using jev-router",
@@ -481,7 +494,7 @@
    {
     "name": "openjev-sglang",
     "owner": "ekzhang",
-    "stars": 79,
+    "stars": 167,
     "date": "2026-09-18",
     "cat": "replicas",
     "desc": "Jev-compatible API endpoint based on open models (prefill-only).",
@@ -490,9 +503,74 @@
     "url": "https://github.com/ekzhang/openjev-sglang"
    },
    {
+    "name": "skillbox",
+    "owner": "kitze",
+    "stars": 166,
+    "date": "2026-09-18",
+    "cat": "devtools",
+    "desc": "Self-hosted, versioned skills library for AI agents. MCP, scoped clients.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/kitze/skillbox",
+    "url": "https://github.com/kitze/skillbox"
+   },
+   {
+    "name": "awesome-jev",
+    "owner": "cobanov",
+    "stars": 151,
+    "date": "2026-09-18",
+    "cat": "awesome",
+    "desc": "Source-backed curated list with concrete usage, clear limitations and reproducible evidence; reviewed Sep 18.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/cobanov/awesome-jev",
+    "url": "https://github.com/cobanov/awesome-jev"
+   },
+   {
+    "name": "perch",
+    "owner": "lakeday-org",
+    "stars": 148,
+    "date": "2026-09-16",
+    "cat": "devtools",
+    "desc": "Semantic code linting with Jev.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/lakeday-org/perch",
+    "url": "https://github.com/lakeday-org/perch"
+   },
+   {
+    "name": "simple-jev",
+    "owner": "featherless-ai",
+    "stars": 145,
+    "date": "2026-09-18",
+    "cat": "replicas",
+    "desc": "Turn any open model into a classifier/Jev endpoint — from featherless-ai.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/featherless-ai/simple-jev",
+    "url": "https://github.com/featherless-ai/simple-jev"
+   },
+   {
+    "name": "jev-review",
+    "owner": "NiazMorshed2007",
+    "stars": 133,
+    "date": "2026-09-17",
+    "cat": "agents",
+    "desc": "Local-first MCP plugin for continuous software-quality review by AI coding agents, powered by Jev.",
+    "img": "https://opengraph.githubassets.com/1/NiazMorshed2007/jev-review",
+    "url": "https://github.com/NiazMorshed2007/jev-review"
+   },
+   {
+    "name": "Jev-cu",
+    "owner": "Sac-Y",
+    "stars": 118,
+    "date": "2026-09-18",
+    "cat": "agents",
+    "desc": "Jev computer-use build.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/Sac-Y/Jev-cu",
+    "url": "https://github.com/Sac-Y/Jev-cu"
+   },
+   {
     "name": "jev-eval-agent",
     "owner": "vinilana",
-    "stars": 74,
+    "stars": 86,
     "date": "2026-09-17",
     "cat": "research",
     "desc": "Agent-driven evaluation harness for Jev decision quality.",
@@ -500,15 +578,15 @@
     "url": "https://github.com/vinilana/jev-eval-agent"
    },
    {
-    "name": "pg-jev",
-    "owner": "realZachi",
-    "stars": 69,
-    "date": "2026-09-18",
-    "cat": "agents",
-    "desc": "Ask your Postgres tables questions in plain language — a PostgreSQL extension powered by Jev.",
+    "name": "pg_typesafe",
+    "owner": "giuliosmall",
+    "stars": 76,
+    "date": "2026-09-17",
+    "cat": "devtools",
+    "desc": "Pre-alpha PostgreSQL extension for TypeSafe (Jev) categorical classification.",
     "src": "refresh",
-    "img": "https://opengraph.githubassets.com/1/realZachi/pg-jev",
-    "url": "https://github.com/realZachi/pg-jev"
+    "img": "https://opengraph.githubassets.com/1/giuliosmall/pg_typesafe",
+    "url": "https://github.com/giuliosmall/pg_typesafe"
    },
    {
     "name": "jev-browser",
@@ -532,26 +610,26 @@
     "url": "https://github.com/vlad-terin/jev-use"
    },
    {
-    "name": "awesome-jev",
-    "owner": "cobanov",
-    "stars": 63,
+    "name": "openjev",
+    "owner": "razorback16",
+    "stars": 67,
     "date": "2026-09-18",
-    "cat": "awesome",
-    "desc": "Source-backed curated list with concrete usage, clear limitations and reproducible evidence; reviewed Sep 18.",
+    "cat": "replicas",
+    "desc": "Open Jev-compatible System One decision server on DiffusionGemma.",
     "src": "refresh",
-    "img": "https://opengraph.githubassets.com/1/cobanov/awesome-jev",
-    "url": "https://github.com/cobanov/awesome-jev"
+    "img": "https://opengraph.githubassets.com/1/razorback16/openjev",
+    "url": "https://github.com/razorback16/openjev"
    },
    {
-    "name": "awesome-jev",
-    "owner": "yibie",
-    "stars": 59,
+    "name": "awesome-jev-projects",
+    "owner": "logicrw",
+    "stars": 61,
     "date": "2026-09-18",
     "cat": "awesome",
-    "desc": "Curated list of public projects, integrations and discussions built on Jev.",
+    "desc": "Source-backed ecosystem radar with plain-language project discovery.",
     "src": "refresh",
-    "img": "https://opengraph.githubassets.com/1/yibie/awesome-jev",
-    "url": "https://github.com/yibie/awesome-jev"
+    "img": "https://opengraph.githubassets.com/1/logicrw/awesome-jev-projects",
+    "url": "https://github.com/logicrw/awesome-jev-projects"
    },
    {
     "name": "dspy-typesafeify",
@@ -638,6 +716,17 @@
     "url": "https://github.com/hr98w/jev-visual"
    },
    {
+    "name": "JevRouter",
+    "owner": "BillionsBobby",
+    "stars": 49,
+    "date": "2026-09-18",
+    "cat": "devtools",
+    "desc": "Lightweight Jev-powered router for models, tools and subagents.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/BillionsBobby/JevRouter",
+    "url": "https://github.com/BillionsBobby/JevRouter"
+   },
+   {
     "name": "pi-warden",
     "owner": "DevMortimer",
     "stars": 47,
@@ -646,6 +735,17 @@
     "desc": "Guardrails for Pi built on pi-typesafe that steer the agent instead of interrupting you: Jev judges irreversible and off-task tool calls, detects stuck loops, checks unverified done claims, flags slop",
     "img": "https://opengraph.githubassets.com/1/DevMortimer/pi-warden",
     "url": "https://github.com/DevMortimer/pi-warden"
+   },
+   {
+    "name": "jeff",
+    "owner": "logan-markewich",
+    "stars": 46,
+    "date": "2026-09-19",
+    "cat": "replicas",
+    "desc": "Self-hosted drop-in replacement for TypeSafe's jev, powered by GliFormer — from the LlamaIndex ecosystem.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/logan-markewich/jeff",
+    "url": "https://github.com/logan-markewich/jeff"
    },
    {
     "name": "NanoJev",
@@ -703,6 +803,17 @@
     "url": "https://github.com/fatwang2/awesome-jev"
    },
    {
+    "name": "ruby_decision_model",
+    "owner": "obie",
+    "stars": 38,
+    "date": "2026-09-18",
+    "cat": "devtools",
+    "desc": "Ruby client for decision models such as TypeSafe Jev.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/obie/ruby_decision_model",
+    "url": "https://github.com/obie/ruby_decision_model"
+   },
+   {
     "name": "skillranker",
     "owner": "Dicklesworthstone",
     "stars": 35,
@@ -744,6 +855,39 @@
     "src": "refresh",
     "img": "https://opengraph.githubassets.com/1/superagents-lab/jev-search",
     "url": "https://github.com/superagents-lab/jev-search"
+   },
+   {
+    "name": "agent-router",
+    "owner": "nidhi-singh02",
+    "stars": 34,
+    "date": "2026-09-17",
+    "cat": "devtools",
+    "desc": "CLI that picks Cursor, Claude Code, Codex or OpenCode + model/effort for a task, then launches it.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/nidhi-singh02/agent-router",
+    "url": "https://github.com/nidhi-singh02/agent-router"
+   },
+   {
+    "name": "vibecheck",
+    "owner": "RafalWilinski",
+    "stars": 34,
+    "date": "2026-09-18",
+    "cat": "agents",
+    "desc": "Chrome extension: vibe-check your X posts with Jev before you hit Post.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/RafalWilinski/vibecheck",
+    "url": "https://github.com/RafalWilinski/vibecheck"
+   },
+   {
+    "name": "jev-sift",
+    "owner": "kbhuw",
+    "stars": 33,
+    "date": "2026-09-18",
+    "cat": "agents",
+    "desc": "Classify first, read selectively — a portable agent plugin and MCP tool for batch text classification.",
+    "src": "refresh",
+    "img": "https://opengraph.githubassets.com/1/kbhuw/jev-sift",
+    "url": "https://github.com/kbhuw/jev-sift"
    },
    {
     "name": "awesome-jev",
