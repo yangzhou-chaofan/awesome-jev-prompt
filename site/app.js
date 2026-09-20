@@ -17,7 +17,7 @@ function renderStats(s) {
     [s.promptEntries, "jev prompt patterns"],
     [s.cookbooks, "official cookbooks"],
     [fmt(s.hnPoints), "HN launch points"],
-    [s.hours + "h", "of ecosystem"]
+    ["day " + Math.max(1, Math.ceil((Date.now() - new Date("2026-09-15T12:00:00Z")) / 86400000)), "of ecosystem"]
   ].forEach(([n, l]) => {
     const d = el("div", "stat");
     d.appendChild(el("div", "num", n));
@@ -29,9 +29,10 @@ function renderStats(s) {
 /* mario facts + arch + schema */
 function renderMario(comm) {
   const facts = document.getElementById("mario-facts");
+  const mario = (comm.repos || []).find(r => r.owner === "fhshaik" && r.name === "typesafe-mario");
   [
     ["2,278", "likes on X"],
-    ["140★", "in 24 hours"],
+    [(mario ? mario.stars : 140) + "★", "and climbing"],
     ["90s", "tweet → repo"],
     ["0", "screenshots seen"]
   ].forEach(([n, l]) => {
@@ -43,7 +44,6 @@ function renderMario(comm) {
   document.getElementById("arch").innerHTML = comm.marioArchitecture
     .replace(/→/g, '<span style="color:var(--green)">→</span>')
     .replace(/Jev Choice/g, '<span style="color:var(--blue)">Jev Choice</span>');
-  const mario = comm.prompts ? null : null;
 }
 
 function renderSchema(sections) {
@@ -369,7 +369,7 @@ fetch("data.json")
     renderVideoWall();
     renderOfficial(d.community.official);
     const tail = document.getElementById("tailnote");
-    if (tail) tail.textContent = "Sources merged: GitHub search (407 matches for 'jev', created > 2026-09-01) + full scrape of TypeSafe's Discord #show-and-tell (714 links since Jul 22, incl. non-'jev'-named projects). Showing top " + Math.min(100, REPOS.length) + " by stars — pick a category to see all " + REPOS.length + ".";
+    if (tail) tail.textContent = "Sources merged: GitHub search (" + d.community.stats.ghMatches + " matches for 'jev' at snapshot) + a first-hand scrape of TypeSafe's Discord #show-and-tell (714 links, full channel history). Showing top " + Math.min(100, REPOS.length) + " by stars — pick a category to see all " + REPOS.length + ".";
   })
   .catch(e => {
     document.querySelector("main").innerHTML =
