@@ -73,10 +73,10 @@ state = {
 
 | | Project | Why |
 |---|---|---|
-| 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. The quietest hard result in the ecosystem. |
+| 📄 | [jerryjliu/docjev](https://github.com/jerryjliu/docjev) | **LlamaIndex's founder shipped document classification on Jev** — first framework-author endorsement. |
+| 💬 | [Finderchangchang/jev-chat-JARVIS](https://github.com/Finderchangchang/jev-chat-JARVIS) | Chat sidekick on real phones: WeChat/QQ/X, 806★ in days. |
+| 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. |
 | 🧩 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | The reverse-engineering: one option-attention head reproducing the Jev shape. |
-| 🏠 | [AboveColin/HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant integration: ask your house a question. |
-| 🪢 | [yacine-kellib/agent-control-plane](https://github.com/yacine-kellib/agent-control-plane) | Pre-launch guardrail thesis: authorization outside the model, Dafny proofs. |
 
 ➡️ **[Full ranked list of all 195 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 

@@ -157,10 +157,10 @@ function cardMedia(r, rank) {
 }
 /* worth-study picks — editorial, refreshed per snapshot */
 const STUDY = [
+  { icon: "📄", owner: "jerryjliu", name: "docjev", why: "LlamaIndex's founder shipped document classification on Jev — PDF/DOCX/PPTX in, typed categories and boundaries out. First framework-author endorsement." },
+  { icon: "💬", owner: "Finderchangchang", name: "jev-chat-JARVIS", why: "A chat sidekick on your phone: reads any conversation in WeChat/QQ/X and drafts replies — 806★ in days, real devices, not a demo." },
   { icon: "🌌", owner: "phyous", name: "tsai-sc", why: "Jev beat StarCraft's Strongarm mission — verified victory screen, attempt 16. The quietest hard result in the ecosystem." },
-  { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." },
-  { icon: "🏠", owner: "AboveColin", name: "HA-Jev", why: "Home Assistant integration: ask your house a question, get probability/choice/score entities." },
-  { icon: "🪢", owner: "yacine-kellib", name: "agent-control-plane", why: "Pre-launch: authorization moved outside the model, with Dafny proofs. The guardrail thesis in one repo." }
+  { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." }
 ];
 function renderStudy() {
   const row = document.getElementById("study-row");
