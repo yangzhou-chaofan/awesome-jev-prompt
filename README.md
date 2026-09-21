@@ -10,7 +10,7 @@
 
 [![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/app/jev-prompt)
 [![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--18%20%E2%9C%93live-fbbf24)](#sources)
-[![Showcase](https://img.shields.io/badge/showcase-189%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
+[![Showcase](https://img.shields.io/badge/showcase-195%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
 [![Sources](https://img.shields.io/badge/sources-38%20verified-green)](SOURCES.md)
 [![Jev](https://img.shields.io/badge/model-Jev%201.13-blue)](https://docs.typesafe.ai/models)
 
@@ -54,7 +54,7 @@ state = {
 
 ## 🏆 Top 30 Jev Showcase
 
-**189 projects tracked, top 30 ranked by stars** — every card carries its own preview:
+**195 projects tracked, top 30 ranked by stars** — every card carries its own preview:
 
 | # | Project | ★ | What it does |
 |---|---|---|---|
@@ -78,7 +78,7 @@ state = {
 | 🏠 | [AboveColin/HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant integration: ask your house a question. |
 | 🪢 | [yacine-kellib/agent-control-plane](https://github.com/yacine-kellib/agent-control-plane) | Pre-launch guardrail thesis: authorization outside the model, Dafny proofs. |
 
-➡️ **[Full ranked list of all 189 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
+➡️ **[Full ranked list of all 195 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 
 ## Repository map
 
