@@ -74,7 +74,7 @@ state = {
 | | Project | Why |
 |---|---|---|
 | 📄 | [jerryjliu/docjev](https://github.com/jerryjliu/docjev) | **LlamaIndex's founder shipped document classification on Jev** — first framework-author endorsement. |
-| 💬 | [Finderchangchang/jev-chat-JARVIS](https://github.com/Finderchangchang/jev-chat-JARVIS) | Chat sidekick on real phones: WeChat/QQ/X, 806★ in days. |
+| 💬 | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Chat sidekick on real phones: WeChat/QQ/X — now an org, 3,600+★. |
 | 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. |
 | 🧩 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | The reverse-engineering: one option-attention head reproducing the Jev shape. |
 

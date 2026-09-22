@@ -158,7 +158,7 @@ function cardMedia(r, rank) {
 /* worth-study picks — editorial, refreshed per snapshot */
 const STUDY = [
   { icon: "📄", owner: "jerryjliu", name: "docjev", why: "LlamaIndex's founder shipped document classification on Jev — PDF/DOCX/PPTX in, typed categories and boundaries out. First framework-author endorsement." },
-  { icon: "💬", owner: "Finderchangchang", name: "jev-chat-JARVIS", why: "A chat sidekick on your phone: reads any conversation in WeChat/QQ/X and drafts replies — 806★ in days, real devices, not a demo." },
+  { icon: "💬", owner: "jev-chat", name: "jev-chat-jarvis", why: "A chat sidekick on your phone: reads any conversation in WeChat/QQ/X and drafts replies — now an org with 3,600+★ across repos." },
   { icon: "🌌", owner: "phyous", name: "tsai-sc", why: "Jev beat StarCraft's Strongarm mission — verified victory screen, attempt 16. The quietest hard result in the ecosystem." },
   { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." }
 ];
