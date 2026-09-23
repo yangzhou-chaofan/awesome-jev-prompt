@@ -10,7 +10,7 @@
 
 [![Live page](https://img.shields.io/badge/live%20page-top100%20jev%20showcase-4ade80)](https://neta.art/app/jev-prompt)
 [![Data snapshot](https://img.shields.io/badge/data%20snapshot-2026--09--18%20%E2%9C%93live-fbbf24)](#sources)
-[![Showcase](https://img.shields.io/badge/showcase-204%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
+[![Showcase](https://img.shields.io/badge/showcase-210%20projects--top%2030%20ranked-blue)](#-top-30-jev-showcase)
 [![Sources](https://img.shields.io/badge/sources-38%20verified-green)](SOURCES.md)
 [![Jev](https://img.shields.io/badge/model-Jev%201.13-blue)](https://docs.typesafe.ai/models)
 
@@ -54,7 +54,7 @@ state = {
 
 ## 🏆 Top 30 Jev Showcase
 
-**204 projects tracked, top 30 ranked by stars** — every card carries its own preview:
+**210 projects tracked, top 30 ranked by stars** — every card carries its own preview:
 
 | # | Project | ★ | What it does |
 |---|---|---|---|
@@ -78,7 +78,7 @@ state = {
 | 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. |
 | 🧩 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | The reverse-engineering: one option-attention head reproducing the Jev shape. |
 
-➡️ **[Full ranked list of all 204 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
+➡️ **[Full ranked list of all 210 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 
 ## Repository map
 
