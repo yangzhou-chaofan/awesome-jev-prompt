@@ -3,7 +3,7 @@
   "topPostLikes": 2278,
   "hnPoints": 1835,
   "ghMatches": 7618,
-  "curated": 210,
+  "curated": 208,
   "cookbooks": 16,
   "promptEntries": 42,
   "discordLinks": 714,
@@ -87,17 +87,6 @@
    "src": "refresh",
    "img": "https://opengraph.githubassets.com/1/jaredpalmer/kev",
    "url": "https://github.com/jaredpalmer/kev"
-  },
-  {
-   "name": "jev-chat-JARVIS",
-   "owner": "Finderchangchang",
-   "stars": 5195,
-   "date": "2026-09-21",
-   "cat": "agents",
-   "desc": "Community build (806★).",
-   "src": "refresh",
-   "img": "https://opengraph.githubassets.com/1/Finderchangchang/jev-chat-JARVIS",
-   "url": "https://github.com/Finderchangchang/jev-chat-JARVIS"
   },
   {
    "name": "jev-chat-jarvis",
