@@ -77,6 +77,7 @@ state = {
 | 💬 | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Chat sidekick on real phones: WeChat/QQ/X — now an org, 3,600+★. |
 | 🌌 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | **Jev beat StarCraft's Strongarm mission** — verified victory screen, attempt 16. |
 | 🧩 | [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | The reverse-engineering: one option-attention head reproducing the Jev shape. |
+| 🔤 | [TypeLLM/TypeLLM](https://github.com/TypeLLM/TypeLLM) | LLMs with type-safe generation — the Jev contract generalized. |
 
 ➡️ **[Full ranked list of all 213 projects](data/community.json)** · interactive version with preview cards: **[Top 100 Jev Showcase](https://neta.art/app/jev-prompt)**
 

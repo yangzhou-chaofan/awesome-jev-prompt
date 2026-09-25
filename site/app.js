@@ -160,7 +160,8 @@ const STUDY = [
   { icon: "📄", owner: "jerryjliu", name: "docjev", why: "LlamaIndex's founder shipped document classification on Jev — PDF/DOCX/PPTX in, typed categories and boundaries out. First framework-author endorsement." },
   { icon: "💬", owner: "jev-chat", name: "jev-chat-jarvis", why: "A chat sidekick on your phone: reads any conversation in WeChat/QQ/X and drafts replies — now an org with 3,600+★ across repos." },
   { icon: "🌌", owner: "phyous", name: "tsai-sc", why: "Jev beat StarCraft's Strongarm mission — verified victory screen, attempt 16. The quietest hard result in the ecosystem." },
-  { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." }
+  { icon: "🧩", owner: "vinnylarouge", name: "jevlike", why: "The reverse-engineering: one option-attention head reproducing the Jev shape, with Doom and chess checkpoints." },
+  { icon: "🔤", owner: "TypeLLM", name: "TypeLLM", why: "LLMs with type-safe generation — the Jev contract generalized to ordinary text models. 570★ on day one signals where things converge." }
 ];
 function renderStudy() {
   const row = document.getElementById("study-row");
