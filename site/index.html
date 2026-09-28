@@ -28,6 +28,7 @@
       <button class="btn primary" onclick="document.getElementById('showcase').scrollIntoView()">🏆 Top 100 showcase ↓</button>
       <a class="btn gh" href="https://github.com/yangzhou-chaofan/awesome-jev-prompt" target="_blank" rel="noopener">★ GitHub: awesome-jev-prompt</a>
       <button class="btn" onclick="document.getElementById('mario').scrollIntoView()">🍄 Watch Mario play</button>
+      <a class="btn try" href="https://console.typesafe.ai/" target="_blank" rel="noopener">⚡ Try the Jev API</a>
       <a class="btn" href="https://docs.typesafe.ai/" target="_blank" rel="noopener">↗ Official docs</a>
     </div>
     <div class="stats" id="stats"></div>
@@ -35,6 +36,14 @@
   </div>
 </header>
 
+<nav class="subnav">
+  <div class="wrap">
+    <a href="/app/jev-prompt/jev-gallery">🖼️ Gallery</a>
+    <a href="/app/jev-prompt/jev-videos">🎬 Videos</a>
+    <a href="/app/jev-prompt/jev-patterns">🧠 Patterns</a>
+    <a href="/app/jev-prompt/jev-use-cases">🗺️ Use Cases</a>
+  </div>
+</nav>
 <main class="wrap">
 
   <!-- HERO VIDEO -->
@@ -123,5 +132,39 @@
 </footer>
 
 <script src="app.js"></script>
+
+<div class="modal-ov" id="save-modal">
+  <div class="modal">
+    <div class="mh">Save this atlas</div>
+    <p class="mp">Create a free Neta account to bookmark the Jev Atlas, copy prompt patterns and get daily ecosystem updates.</p>
+    <div class="ma">
+      <a class="btn primary" href="/world/new">Create free account</a>
+      <button class="btn" onclick="closeSaveModal()">Maybe later</button>
+    </div>
+  </div>
+</div>
+<script>
+function openSaveModal() { document.getElementById("save-modal").classList.add("open"); }
+function closeSaveModal() { document.getElementById("save-modal").classList.remove("open"); }
+document.getElementById("save-modal").addEventListener("click", e => { if (e.target.id === "save-modal") closeSaveModal(); });
+/* session-限一次: 滚到 patterns 区 50% 弹出; 已登录(有 localStorage 标记)或已弹过则不弹 */
+(function () {
+  let shown = sessionStorage.getItem("save-modal-shown");
+  if (shown) return;
+  const lib = document.getElementById("library");
+  if (!lib) return;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting && !sessionStorage.getItem("save-modal-shown")) {
+        sessionStorage.setItem("save-modal-shown", "1");
+        openSaveModal();
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  obs.observe(lib);
+})();
+</script>
+
 </body>
 </html>

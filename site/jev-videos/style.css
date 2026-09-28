@@ -173,19 +173,3 @@ footer .mono { font-family: var(--mono); font-size: 11px; color: var(--faint); m
 /* github cta */
 .btn.gh { background: #161b22; border-color: #30363d; color: #e9e7e0; font-weight: 700; }
 .btn.gh:hover { border-color: #6e7681; }
-
-/* subnav */
-.subnav { border-bottom: 1px solid var(--line); background: var(--bg2); }
-.subnav .wrap { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 24px; }
-.subnav a { font-family: var(--mono); font-size: 12.5px; color: var(--dim); padding: 6px 14px; border-radius: 8px; border: 1px solid transparent; transition: .15s; }
-.subnav a:hover { color: var(--green); border-color: var(--line); text-decoration: none; }
-.btn.try { background: rgba(125,211,252,.12); border-color: rgba(125,211,252,.5); color: var(--blue); font-weight: 700; }
-.btn.try:hover { border-color: var(--blue); }
-
-/* signup modal */
-.modal-ov { position: fixed; inset: 0; background: rgba(5,7,10,.8); display: none; place-items: center; z-index: 999; backdrop-filter: blur(3px); }
-.modal-ov.open { display: grid; }
-.modal { background: var(--card2); border: 1px solid var(--line); border-radius: 16px; padding: 34px 38px; max-width: 440px; text-align: center; }
-.modal .mh { font-size: 21px; font-weight: 800; letter-spacing: -.01em; }
-.modal .mp { color: var(--dim); font-size: 14px; margin: 10px 0 20px; }
-.modal .ma { display: flex; gap: 10px; justify-content: center; }
